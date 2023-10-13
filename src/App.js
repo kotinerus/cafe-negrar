@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import coffeBg from "./coffee-beans-background.png";
+import waiter from "./waiterJPG.jpeg";
+import send from "./send.png";
+import "./scss/AppStyles.css";
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div className="welcomeDiv"></div>
+
+      <div className="welcomeDiv_text">
+        <h1>NEGRAR</h1>
+        <h2>Twoje miejsce na rozwinięcie skrzydeł</h2>
+        <h3>Zostań z nami na dłużej</h3>
+
+        <form>
+          <input placeholder="ADRES EMAIL" />
+          <button>WYŚLIJ</button>
+        </form>
+      </div>
+
+      <div className="menuDiv">
+        <div className="menuDiv_text">
+          <h2>Zasmakuj się w naszej kawie</h2>
+          <p>
+            Nie ma nic lepszego niż przepyszna kawa ze świeżo palonych ziaren
+          </p>
+        </div>
+        <img src={coffeBg} />
+      </div>
+    </>
   );
 }
-
-export default App;
+function Navbar() {
+  return (
+    <nav className="navbarDiv">
+      <h2>NEGRAR CAFE</h2>
+      <h2>Menu</h2>
+      <h2>Rezerwacja</h2>
+      <h2>Oferta</h2>
+    </nav>
+  );
+}
