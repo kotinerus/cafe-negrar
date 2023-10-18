@@ -5,6 +5,13 @@
   src: url(./PlayfairDisplay-Italic-VariableFont_wght.ttf);
 }
 
+$backgroung-primary: #2b2828;
+$backgroung-secondary: #f4eded;
+$backgroung-info-primary: #e67e22;
+
+$color-primary: #2b2828;
+$color-secondary: #f4eded;
+
 body {
   margin: 0;
   padding: 0;
@@ -21,7 +28,7 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr;
   text-align: center;
-  background-color: rgb(43, 40, 40);
+  background-color: $backgroung-primary;
   color: white;
   z-index: 1;
 }
@@ -106,7 +113,6 @@ body {
     height: 80%;
   }
   .menuDiv_text {
-    background-color: blue;
     position: relative;
     height: 80%;
     width: 80%;
@@ -116,5 +122,133 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    color: #f4eded;
+    h2 {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    button {
+      margin-top: 2rem;
+      background-color: #f4eded;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      width: 60%;
+      height: 8%;
+      border-radius: 45px;
+      border: none;
+    }
   }
+}
+
+.panel {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  img {
+    translate: 0 5%;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 45px;
+  }
+
+  article {
+    translate: 0 5%;
+    height: 67%;
+    width: 80%;
+    justify-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  span {
+    color: #3498db;
+  }
+  p {
+    position: relative;
+
+    text-align: center;
+    width: 80%;
+    justify-self: center;
+    left: 10%;
+    font-size: 1.5rem;
+  }
+}
+
+.panel-primary {
+  background-color: $backgroung-primary;
+  color: $color-secondary;
+}
+.panel-secondary {
+  background-color: $color-secondary;
+  color: $backgroung-primary;
+}
+//
+.panel {
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+//
+.imgLeft {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img text";
+  img {
+    grid-area: img;
+    justify-self: center;
+    translate: 0 5%;
+  }
+  section {
+    grid-area: text;
+    translate: 0 5%;
+  }
+}
+//
+.imgRight {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text img";
+  img {
+    grid-area: img;
+    justify-self: center;
+    border-radius: 45px;
+    translate: 0 5%;
+  }
+  section {
+    grid-area: text;
+    translate: 0 5%;
+  }
+}
+//
+.btn-info {
+  position: relative;
+  width: 50%;
+  line-height: 4rem;
+  border: none;
+  border-radius: 45px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: $backgroung-info-primary;
 }
