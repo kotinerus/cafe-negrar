@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/cafe-negrar/static/css/main.8b6f4eff.css",
-    "main.js": "/cafe-negrar/static/js/main.bb46fceb.js",
+    "main.css": "/cafe-negrar/static/css/main.06782dc9.css",
+    "main.js": "/cafe-negrar/static/js/main.93e202c1.js",
     "static/media/coffee-beans-background.png": "/cafe-negrar/static/media/coffee-beans-background.d75f7b451a84280c2320.png",
+    "static/media/office.jpg": "/cafe-negrar/static/media/office.4dc4b18ffac781473d39.jpg",
     "static/media/waiterJPG.jpeg": "/cafe-negrar/static/media/waiterJPG.1c479455024d4844d275.jpeg",
     "static/media/PlayfairDisplay-Italic-VariableFont_wght.ttf": "/cafe-negrar/static/media/PlayfairDisplay-Italic-VariableFont_wght.2f795353f413479428d6.ttf",
     "static/media/working-men.jpg": "/cafe-negrar/static/media/working-men.265bcb1f409077529e82.jpg",
     "index.html": "/cafe-negrar/index.html",
-    "main.8b6f4eff.css.map": "/cafe-negrar/static/css/main.8b6f4eff.css.map",
-    "main.bb46fceb.js.map": "/cafe-negrar/static/js/main.bb46fceb.js.map"
+    "main.06782dc9.css.map": "/cafe-negrar/static/css/main.06782dc9.css.map",
+    "main.93e202c1.js.map": "/cafe-negrar/static/js/main.93e202c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b6f4eff.css",
-    "static/js/main.bb46fceb.js"
+    "static/css/main.06782dc9.css",
+    "static/js/main.93e202c1.js"
   ]
 }
