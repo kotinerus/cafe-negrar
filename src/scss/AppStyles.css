@@ -23,14 +23,18 @@ body {
   color: white;
   z-index: 1;
 }
+.navbarDiv .item {
+  cursor: pointer;
+}
+.navbarDiv .item:hover {
+  background-color: #e67e22;
+  transition: 0.4s;
+  color: #2b2828;
+}
 
-.welcomeDiv {
+.welcomeDiv_bg {
   height: 92vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url(../waiterJPG.jpeg) no-repeat center center fixed;
+  background: url("../imgs/waiterJPG.jpeg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -40,19 +44,18 @@ body {
   width: 100vw;
   top: 8vh;
   background-color: white;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   opacity: 0.65;
   line-height: 0rem;
+  color: #2b2828;
 }
 .welcomeDiv_text h1 {
   font-size: 10rem;
   font-style: italic;
   letter-spacing: 2rem;
-  color: rgb(43, 40, 40);
 }
 .welcomeDiv_text h2 {
   font-size: 2rem;
@@ -61,7 +64,7 @@ body {
   padding-bottom: 1rem;
 }
 .welcomeDiv_text form {
-  border: solid 3px black;
+  border: solid 2px #2b2828;
   width: 50%;
   height: 3rem;
   border-radius: 35px;
@@ -81,55 +84,27 @@ body {
   color: #2b2828;
 }
 .welcomeDiv_text form button {
-  width: 20%;
-  border-radius: 0 30px 30px 0;
+  width: 25%;
+  border-radius: 0 25px 25px 0;
   background-color: #2b2828;
-  color: white;
+  color: #f4eded;
+  cursor: pointer;
+}
+.welcomeDiv_text form button:hover {
+  background-color: #e67e22;
+  color: #2b2828;
+  transition: 0.4s;
+  border-color: #e67e22;
 }
 
-.menuDiv {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.panel-primary {
   background-color: #2b2828;
-}
-.menuDiv img {
-  position: relative;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 80%;
-}
-.menuDiv .menuDiv_text {
-  position: relative;
-  height: 80%;
-  width: 80%;
-  top: 10%;
-  left: 10%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   color: #f4eded;
 }
-.menuDiv .menuDiv_text h2 {
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-.menuDiv .menuDiv_text p {
-  font-size: 1.5rem;
-  text-align: center;
-}
-.menuDiv .menuDiv_text button {
-  margin-top: 2rem;
+
+.panel-secondary {
   background-color: #f4eded;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  width: 60%;
-  height: 8%;
-  border-radius: 45px;
-  border: none;
+  color: #2b2828;
 }
 
 .panel {
@@ -165,7 +140,7 @@ body {
   text-align: center;
 }
 .panel span {
-  color: #3498db;
+  color: #e67e22;
 }
 .panel p {
   position: relative;
@@ -174,25 +149,6 @@ body {
   justify-self: center;
   left: 10%;
   font-size: 1.5rem;
-}
-
-.panel-primary {
-  background-color: #2b2828;
-  color: #f4eded;
-}
-
-.panel-secondary {
-  background-color: #f4eded;
-  color: #2b2828;
-}
-
-.panel {
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .imgLeft {
@@ -233,4 +189,17 @@ body {
   font-size: 1.5rem;
   text-transform: uppercase;
   background-color: #e67e22;
+  cursor: pointer;
+}
+
+.btn-info:hover {
+  transition: 0.4s;
+  color: #f4eded;
+}
+
+footer {
+  height: 5vh;
+  background-color: #2b2828;
+  color: #f4eded;
+  text-align: center;
 }/*# sourceMappingURL=AppStyles.css.map */

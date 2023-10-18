@@ -11,7 +11,7 @@ $backgroung-info-primary: #e67e22;
 
 $color-primary: #2b2828;
 $color-secondary: #f4eded;
-
+$color-info-primary: #e67e22;
 body {
   margin: 0;
   padding: 0;
@@ -31,16 +31,19 @@ body {
   background-color: $backgroung-primary;
   color: white;
   z-index: 1;
+  .item {
+    cursor: pointer;
+  }
+  .item:hover {
+    background-color: #e67e22;
+    transition: 0.4s;
+    color: $color-primary;
+  }
 }
 
-.welcomeDiv {
+.welcomeDiv_bg {
   height: 92vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url(../waiterJPG.jpeg) no-repeat center center fixed;
+  background: url("../imgs/waiterJPG.jpeg") no-repeat center center fixed;
   background-size: cover;
 }
 .welcomeDiv_text {
@@ -48,22 +51,18 @@ body {
   height: 92vh;
   width: 100vw;
   top: 8vh;
-
   background-color: white;
-
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   opacity: 0.65;
   line-height: 0rem;
+  color: $color-primary;
   h1 {
     font-size: 10rem;
     font-style: italic;
     letter-spacing: 2rem;
-
-    color: rgb(43, 40, 40);
   }
   h2 {
     font-size: 2rem;
@@ -73,7 +72,7 @@ body {
   }
 
   form {
-    border: solid 3px black;
+    border: solid 2px $backgroung-primary;
     width: 50%;
     height: 3rem;
     border-radius: 35px;
@@ -90,61 +89,35 @@ body {
     input {
       width: 80%;
       border-radius: 30px 0 0 30px;
-      color: #2b2828;
+      color: $color-primary;
     }
     button {
-      width: 20%;
-      border-radius: 0 30px 30px 0;
-      background-color: #2b2828;
-      color: white;
+      width: 25%;
+      border-radius: 0 25px 25px 0;
+      background-color: $backgroung-primary;
+      color: $color-secondary;
+      cursor: pointer;
     }
-  }
-}
-.menuDiv {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #2b2828;
-  img {
-    position: relative;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
-  }
-  .menuDiv_text {
-    position: relative;
-    height: 80%;
-    width: 80%;
-    top: 10%;
-    left: 10%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    color: #f4eded;
-    h2 {
-      font-size: 2.2rem;
-      text-transform: uppercase;
-      font-weight: 900;
-    }
-    p {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-    button {
-      margin-top: 2rem;
-      background-color: #f4eded;
-      text-transform: uppercase;
-      font-size: 1.3rem;
-      width: 60%;
-      height: 8%;
-      border-radius: 45px;
-      border: none;
+    button:hover {
+      background-color: $backgroung-info-primary;
+      color: $color-primary;
+      transition: 0.4s;
+      border-color: #e67e22;
     }
   }
 }
 
+//
+.panel-primary {
+  background-color: $backgroung-primary;
+  color: $color-secondary;
+}
+//
+.panel-secondary {
+  background-color: $color-secondary;
+  color: $backgroung-primary;
+}
+//
 .panel {
   width: 100%;
   height: 100vh;
@@ -181,7 +154,7 @@ body {
     text-align: center;
   }
   span {
-    color: #3498db;
+    color: $color-info-primary;
   }
   p {
     position: relative;
@@ -192,25 +165,6 @@ body {
     left: 10%;
     font-size: 1.5rem;
   }
-}
-
-.panel-primary {
-  background-color: $backgroung-primary;
-  color: $color-secondary;
-}
-.panel-secondary {
-  background-color: $color-secondary;
-  color: $backgroung-primary;
-}
-//
-.panel {
-  height: 100vh;
-  width: 100%;
-
-  display: grid;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 //
 .imgLeft {
@@ -251,4 +205,15 @@ body {
   font-size: 1.5rem;
   text-transform: uppercase;
   background-color: $backgroung-info-primary;
+  cursor: pointer;
+}
+.btn-info:hover {
+  transition: 0.4s;
+  color: $color-secondary;
+}
+footer {
+  height: 5vh;
+  background-color: $backgroung-primary;
+  color: $color-secondary;
+  text-align: center;
 }
