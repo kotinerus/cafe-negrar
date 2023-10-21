@@ -291,6 +291,9 @@ footer {
   footer {
     height: 5vh;
   }
+  .panelMobile {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
