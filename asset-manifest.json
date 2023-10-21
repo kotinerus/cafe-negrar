@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cafe-negrar/static/css/main.73919910.css",
+    "main.css": "/cafe-negrar/static/css/main.4941b62b.css",
     "main.js": "/cafe-negrar/static/js/main.6831bb65.js",
     "static/media/coffee-beans-background.png": "/cafe-negrar/static/media/coffee-beans-background.d75f7b451a84280c2320.png",
     "static/media/office.jpg": "/cafe-negrar/static/media/office.4dc4b18ffac781473d39.jpg",
@@ -9,11 +9,11 @@
     "static/media/PlayfairDisplay-Italic-VariableFont_wght.ttf": "/cafe-negrar/static/media/PlayfairDisplay-Italic-VariableFont_wght.2f795353f413479428d6.ttf",
     "static/media/working-men.jpg": "/cafe-negrar/static/media/working-men.265bcb1f409077529e82.jpg",
     "index.html": "/cafe-negrar/index.html",
-    "main.73919910.css.map": "/cafe-negrar/static/css/main.73919910.css.map",
+    "main.4941b62b.css.map": "/cafe-negrar/static/css/main.4941b62b.css.map",
     "main.6831bb65.js.map": "/cafe-negrar/static/js/main.6831bb65.js.map"
   },
   "entrypoints": [
-    "static/css/main.73919910.css",
+    "static/css/main.4941b62b.css",
     "static/js/main.6831bb65.js"
   ]
 }
