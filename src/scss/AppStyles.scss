@@ -351,21 +351,24 @@ footer {
     justify-content: center;
 
     img {
-      width: 50%;
+      margin-top: 2rem;
+      width: 40%;
+      border-radius: 45px;
     }
     section {
       text-align: center;
+      width: 80%;
       h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
       p {
-        font-size: 1.3rem;
+        font-size: 1rem;
       }
     }
   }
   .btn-info {
-    line-height: 3rem;
-    font-size: 1.5rem;
+    line-height: 2rem;
+    font-size: 1rem;
   }
   footer {
     height: 5vh;
@@ -432,10 +435,12 @@ footer {
     justify-content: center;
 
     img {
+      border-radius: 45px;
       width: 75%;
     }
     section {
       text-align: center;
+      width: 80%;
       h2 {
         font-size: 1.5rem;
       }
