@@ -1,3 +1,11 @@
-export function PanelImgLeft({ panelPallete = "panel-primary", children }) {
-  return <div className={`panel ${panelPallete} imgLeft`}>{children}</div>;
+export function PanelImgLeft({
+  panelPallete = "panel-primary",
+  id = "",
+  children,
+}) {
+  return (
+    <div className={`panel ${panelPallete} imgLeft`} id={id}>
+      {children}
+    </div>
+  );
 }
