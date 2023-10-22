@@ -14,7 +14,7 @@ export default function App() {
       <Navbar />
 
       <div className="welcomeDiv_bg"></div>
-      <div className="welcomeDiv_text">
+      <div className="welcomeDiv_text" id="zapis">
         <h1>NEGRAR</h1>
         <h2>Twoje miejsce na rozwinięcie skrzydeł</h2>
         <h3>Zostań z nami na dłużej</h3>
@@ -24,7 +24,7 @@ export default function App() {
         </form>
       </div>
 
-      <PanelImgRight>
+      <PanelImgRight id={"menu"}>
         <section>
           <h2>Rozsmakuj się w naszej kawie</h2>
           <p>
@@ -56,7 +56,7 @@ export default function App() {
           <Button>Przejdź do menu</Button>
         </section>
       </PanelMobile>
-      <PanelImgLeft panelPallete="panel-secondary" id="menu">
+      <PanelImgLeft panelPallete="panel-secondary" id={"rezerwacje"}>
         <img src={workingMen} />
         <section>
           <h2>
@@ -95,7 +95,7 @@ export default function App() {
           <Button>Rezerwuj teraz</Button>
         </section>
       </PanelMobile>
-      <PanelImgRight>
+      <PanelImgRight id={"oferta"}>
         <section>
           <h2>Miejsce dla Ciebe</h2>
           <p>
@@ -138,15 +138,18 @@ function Navbar() {
       <div>
         <h2>NEGRAR CAFE</h2>
       </div>
-      <div className="item">
-        <a href="#menu">Menu</a>
-      </div>
-      <div className="item">
-        <a>Rezerwacja</a>
-      </div>
-      <div className="item">
-        <a>Oferta</a>
-      </div>
+      <a className="item" href="#zapis">
+        Dołącz do nas
+      </a>
+      <a className="item" href="#menu">
+        Menu
+      </a>
+      <a className="item" href="#rezerwacje">
+        Rezerwacja
+      </a>
+      <a className="item" href="#oferta">
+        Oferta
+      </a>
     </nav>
   );
 }

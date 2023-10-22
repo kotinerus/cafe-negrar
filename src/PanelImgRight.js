@@ -1,6 +1,6 @@
 export function PanelImgRight({
   panelPallete = "panel-primary",
-  id = "",
+  id,
   children,
 }) {
   return (
