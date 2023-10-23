@@ -28,6 +28,7 @@ body {
 }
 .navbarDiv {
   top: 0%;
+
   opacity: 1;
   width: 100%;
   position: sticky;
@@ -51,16 +52,9 @@ body {
   .item:hover {
     background-color: #e67d22e1;
     transition: 0.5s;
-    a {
-      color: $color-primary;
-    }
+    height: 8vh;
+    color: $color-primary;
   }
-}
-
-.welcomeDiv_bg {
-  padding: 0%;
-  background: url("../imgs/waiterJPG.jpeg") no-repeat center center fixed;
-  background-size: cover;
 }
 .welcomeDiv_text {
   position: absolute;
@@ -102,9 +96,16 @@ body {
       background-color: $backgroung-info-primary;
       color: $color-primary;
       transition: 0.4s;
+
       border-color: #e67e22;
     }
   }
+}
+
+.welcomeDiv_bg {
+  padding: 0%;
+  background: url("../imgs/waiterJPG.jpeg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 //
@@ -178,9 +179,7 @@ footer {
   .navbarDiv {
     height: 8vh;
     .item {
-      a {
-        font-size: 1.2rem;
-      }
+      font-size: 1rem;
     }
   }
   .welcomeDiv_bg {
@@ -301,9 +300,7 @@ footer {
   .navbarDiv {
     height: 8vh;
     .item {
-      a {
-        font-size: 1rem;
-      }
+      font-size: 0.9rem;
     }
   }
   .welcomeDiv_bg {
@@ -314,6 +311,7 @@ footer {
     height: 92vh;
     width: 100vw;
     top: 8vh;
+
     h1 {
       font-size: 6rem;
       letter-spacing: 2rem;
@@ -325,48 +323,43 @@ footer {
       padding-bottom: 1rem;
     }
     form {
+      margin-top: 2%;
       width: 50%;
-      height: 3rem;
+      height: 2.5rem;
+      border: solid 2px black;
       input,
       button {
-        line-height: 3rem;
+        height: 100%;
       }
       input {
         width: 80%;
       }
       button {
         width: 25%;
+        // height: 3rem;
       }
     }
   }
 
   .panel {
-    display: none;
-  }
-  .panelMobile {
+    width: 100%;
     height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    text-align: center;
     img {
-      margin-top: 2rem;
-      width: 40%;
+      width: 50%;
+      order: 1;
       border-radius: 45px;
     }
     section {
-      text-align: center;
+      order: 2;
       width: 80%;
-      h2 {
-        font-size: 2rem;
-      }
-      p {
-        font-size: 1rem;
-      }
     }
   }
+
   .btn-info {
     line-height: 2rem;
     font-size: 1rem;
@@ -410,13 +403,14 @@ footer {
     }
     form {
       width: 75%;
-      height: 2rem;
+      line-height: 2rem;
       input,
       button {
         line-height: 2rem;
       }
       input {
         width: 80%;
+        line-height: 2rem;
       }
       button {
         width: 25%;
@@ -425,29 +419,26 @@ footer {
   }
 
   .panel {
-    display: none;
-  }
-  .panelMobile {
+    width: 100%;
     height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    text-align: center;
+    span {
+      color: $color-info-primary;
+      text-transform: uppercase;
+    }
     img {
+      width: 65%;
+      order: 1;
       border-radius: 45px;
-      width: 75%;
     }
     section {
-      text-align: center;
+      order: 2;
       width: 80%;
-      h2 {
-        font-size: 1.5rem;
-      }
-      p {
-        font-size: 0.8rem;
-      }
+      font-size: 1.1rem;
     }
   }
   .btn-info {

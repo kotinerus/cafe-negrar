@@ -44,15 +44,8 @@ body {
 .navbarDiv .item:hover {
   background-color: rgba(230, 125, 34, 0.8823529412);
   transition: 0.5s;
-}
-.navbarDiv .item:hover a {
+  height: 8vh;
   color: #2b2828;
-}
-
-.welcomeDiv_bg {
-  padding: 0%;
-  background: url("../imgs/waiterJPG.jpeg") no-repeat center center fixed;
-  background-size: cover;
 }
 
 .welcomeDiv_text {
@@ -96,6 +89,12 @@ body {
   color: #2b2828;
   transition: 0.4s;
   border-color: #e67e22;
+}
+
+.welcomeDiv_bg {
+  padding: 0%;
+  background: url("../imgs/waiterJPG.jpeg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 .panel-primary {
@@ -168,8 +167,8 @@ footer {
   .navbarDiv {
     height: 8vh;
   }
-  .navbarDiv .item a {
-    font-size: 1.2rem;
+  .navbarDiv .item {
+    font-size: 1rem;
   }
   .welcomeDiv_bg {
     height: 92vh;
@@ -276,8 +275,8 @@ footer {
   .navbarDiv {
     height: 8vh;
   }
-  .navbarDiv .item a {
-    font-size: 1rem;
+  .navbarDiv .item {
+    font-size: 0.9rem;
   }
   .welcomeDiv_bg {
     height: 92vh;
@@ -299,12 +298,14 @@ footer {
     padding-bottom: 1rem;
   }
   .welcomeDiv_text form {
+    margin-top: 2%;
     width: 50%;
-    height: 3rem;
+    height: 2.5rem;
+    border: solid 2px black;
   }
   .welcomeDiv_text form input,
   .welcomeDiv_text form button {
-    line-height: 3rem;
+    height: 100%;
   }
   .welcomeDiv_text form input {
     width: 80%;
@@ -313,29 +314,22 @@ footer {
     width: 25%;
   }
   .panel {
-    display: none;
-  }
-  .panelMobile {
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
-  .panelMobile img {
-    margin-top: 2rem;
-    width: 40%;
+  .panel img {
+    width: 50%;
+    order: 1;
     border-radius: 45px;
   }
-  .panelMobile section {
-    text-align: center;
+  .panel section {
+    order: 2;
     width: 80%;
-  }
-  .panelMobile section h2 {
-    font-size: 2rem;
-  }
-  .panelMobile section p {
-    font-size: 1rem;
   }
   .btn-info {
     line-height: 2rem;
@@ -380,7 +374,7 @@ footer {
   }
   .welcomeDiv_text form {
     width: 75%;
-    height: 2rem;
+    line-height: 2rem;
   }
   .welcomeDiv_text form input,
   .welcomeDiv_text form button {
@@ -388,33 +382,33 @@ footer {
   }
   .welcomeDiv_text form input {
     width: 80%;
+    line-height: 2rem;
   }
   .welcomeDiv_text form button {
     width: 25%;
   }
   .panel {
-    display: none;
-  }
-  .panelMobile {
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  .panelMobile img {
-    border-radius: 45px;
-    width: 75%;
-  }
-  .panelMobile section {
     text-align: center;
+  }
+  .panel span {
+    color: #e67e22;
+    text-transform: uppercase;
+  }
+  .panel img {
+    width: 65%;
+    order: 1;
+    border-radius: 45px;
+  }
+  .panel section {
+    order: 2;
     width: 80%;
-  }
-  .panelMobile section h2 {
-    font-size: 1.5rem;
-  }
-  .panelMobile section p {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
   .btn-info {
     line-height: 2rem;
