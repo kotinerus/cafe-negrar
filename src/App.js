@@ -63,8 +63,8 @@ const listOfCoffes = [
 ];
 
 export default function App() {
-  const [landingPageIsOpen, setLandingPageIsOpen] = useState(false);
-  const [menuIsOpen, setMenuIsOpen] = useState(true);
+  const [landingPageIsOpen, setLandingPageIsOpen] = useState(true);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [reservationIsOpen, setReservationIsOpen] = useState(false);
   const [offerIsOpen, setOfferIsOpen] = useState(false);
 
