@@ -1,0 +1,42 @@
+$backgroung-primary: #2b2828;
+$backgroung-secondary: #f4eded;
+$backgroung-info-primary: #e67e22;
+$background-info-secondary: #a64b00;
+
+$color-primary: #2b2828;
+$color-secondary: #f4eded;
+$color-info-primary: #e67e22;
+body {
+  display: flex;
+  flex-direction: column;
+}
+.menuPositionsPanels {
+  position: absolute;
+  background-color: $backgroung-primary;
+  width: 100vw;
+  top: 8vh;
+  height: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  grid-row-gap: 2rem;
+  background-color: $backgroung-secondary;
+  .item {
+    margin-top: 2rem;
+    background-color: lighten($backgroung-primary, $amount: 15);
+    color: $color-secondary;
+    width: 70%;
+    justify-self: center;
+    height: auto;
+    padding: 2rem 0rem;
+    border-radius: 45px;
+    img {
+      width: 50%;
+    }
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+}

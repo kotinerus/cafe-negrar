@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuPositionsPanels {
+  position: absolute;
+  background-color: #2b2828;
+  width: 100vw;
+  top: 8vh;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  grid-row-gap: 2rem;
+  background-color: #f4eded;
+}
+.menuPositionsPanels .item {
+  margin-top: 2rem;
+  background-color: #534d4d;
+  color: #f4eded;
+  width: 70%;
+  justify-self: center;
+  height: auto;
+  padding: 2rem 0rem;
+  border-radius: 45px;
+}
+.menuPositionsPanels .item img {
+  width: 50%;
+}
+.menuPositionsPanels .item h2 {
+  text-transform: uppercase;
+}/*# sourceMappingURL=menuStyles.css.map */

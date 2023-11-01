@@ -1,105 +1,119 @@
-import { Button } from "./Button";
-import { PanelImgLeft } from "./PanelImgLeft";
-import { PanelImgRight } from "./PanelImgRight";
-import Waiter from "./imgs/waiterJPG.jpeg";
-import coffeBg from "./imgs/coffee-beans-background.png";
-import workingMen from "./imgs/working-men.jpg";
-import office from "./imgs/office.jpg";
+import { useState } from "react";
+import { LandingPage } from "./LANDING_PAGE/LandingPage";
+import { Navbar } from "./NAVBAR/Navbar";
+import "./mainStyles/AppStyles.css";
 
-import "./scss/AppStyles.css";
+import { MenuPage } from "./MENU/MenuPage";
+const listOfCoffes = [
+  {
+    name: "Czarna",
+    price: 8,
+  },
+  {
+    name: "Kawa z mlekiem",
+    price: 8,
+  },
+  {
+    name: "Cappucino",
+    price: [10, 12, 14],
+    category: "kawa",
+    specialOffert: false,
+    imgSrc: "name/urlOfImg",
+  },
+  {
+    name: "Americano",
+    price: 8,
+  },
+  {
+    name: "Late Macchiato",
+    price: 8,
+  },
+  {
+    name: "Cafe au lait",
+    price: 8,
+  },
+  {
+    name: "Ristretto",
+    price: 8,
+  },
+  {
+    name: "Espresso",
+    price: 8,
+  },
+  {
+    name: "Espresso lungo",
+    price: 8,
+  },
+  {
+    name: "Espresso double",
+    price: 8,
+  },
+  {
+    name: "Caffe creama",
+    price: 8,
+  },
+  {
+    name: "Espresso macchiato",
+    price: 8,
+  },
+  {
+    name: "Melange",
+    price: 8,
+  },
+];
 
 export default function App() {
+  const [landingPageIsOpen, setLandingPageIsOpen] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(true);
+  const [reservationIsOpen, setReservationIsOpen] = useState(false);
+  const [offerIsOpen, setOfferIsOpen] = useState(false);
+
+  function changeToLanding() {
+    setLandingPageIsOpen(true);
+    setMenuIsOpen(false);
+    setReservationIsOpen(false);
+    setOfferIsOpen(false);
+  }
+  function changeToMenu() {
+    setLandingPageIsOpen(false);
+    setMenuIsOpen(true);
+    setReservationIsOpen(false);
+    setOfferIsOpen(false);
+  }
+  function changeToReservation() {
+    setLandingPageIsOpen(false);
+    setMenuIsOpen(false);
+    setReservationIsOpen(true);
+    setOfferIsOpen(false);
+  }
+  function changeToOffer() {
+    setLandingPageIsOpen(false);
+    setMenuIsOpen(false);
+    setReservationIsOpen(false);
+    setOfferIsOpen(true);
+  }
+
   return (
     <>
-      <Navbar />
-
-      <div className="welcomeDiv_bg"></div>
-      <div className="welcomeDiv_text" id="zapis">
-        <h1>NEGRAR</h1>
-        <h2>Twoje miejsce na rozwinięcie skrzydeł</h2>
-        <h3>Zostań z nami na dłużej</h3>
-        <form>
-          <input placeholder="ADRES EMAIL" />
-          <button>WYŚLIJ</button>
-        </form>
-      </div>
-
-      <PanelImgRight id={"menu"}>
-        <section>
-          <h2>Rozsmakuj się w naszej kawie</h2>
-          <p>
-            Nasza kawiarnia to miejsce, gdzie aromatyczne ziarna spotykają się z
-            pasją i precyzją, tworząc niezapomniane smaki.
-          </p>
-          <p>
-            Odkryj różnorodność naszego menu, które zaspokoi każdą kawową
-            zachciankę i pozwoli Ci na prawdziwą podróż przez świat kawowych
-            doznań.
-          </p>
-          <Button>Przejdź do menu</Button>
-        </section>
-        <img src={coffeBg} />
-      </PanelImgRight>
-
-      <PanelImgLeft panelPallete="panel-secondary" id={"rezerwacje"}>
-        <img src={workingMen} />
-        <section>
-          <h2>
-            Kreuj historię w <span>naszej</span> przestrzeni
-          </h2>
-          <p>
-            Pracuj w otoczeniu pełnym innowacji, kreatywności i możliwości.
-            Nasza przestrzeń to więcej niż biuro - to centrum, w którym Twoje
-            pomysły nabierają życia.
-          </p>
-          <p>
-            Tu spotkasz inspirujących ludzi, zbudujesz swoją markę i osiągniesz
-            sukces. Rezerwuj swój stolik już teraz i stań się częścią historii
-            sukcesu, która tworzy się właśnie w naszej przestrzeni.
-          </p>
-          <Button>Rezerwuj teraz</Button>
-        </section>
-      </PanelImgLeft>
-
-      <PanelImgRight id={"oferta"}>
-        <section>
-          <h2>Miejsce dla Ciebe</h2>
-          <p>
-            Poznaj ofertę naszej firmy i dołącz do grupy pracowitych i
-            kreatywnych ludzi.{" "}
-          </p>
-          <p>
-            W naszej ofercie znajdziesz możliwość założenia wirtualnego biura,
-            wynajęcia przestrzeni biurowej oraz abonamentu uprawniającego do
-            swobodnego poruszaniu się po naszym obiekcie
-          </p>
-          <Button>Sprawdź ofertę</Button>
-        </section>
-        <img src={office} />
-      </PanelImgRight>
-
-      <footer>Wszelkie prawa zastrzeżone © 2023 przez Negrar Cafe</footer>
+      <Navbar
+        colorPallete={"primaryWhiteOnPrimamryBlack"}
+        colorHover={"hoverLightOrange"}
+      >
+        <a className="item" onClick={changeToLanding}>
+          <h2>NEGRAR CAFE</h2>
+        </a>
+        <a className="item" onClick={changeToMenu}>
+          Menu
+        </a>
+        <a className="item" onClick={changeToReservation}>
+          Rezerwacja
+        </a>
+        <a className="item" onClick={changeToOffer}>
+          Oferta
+        </a>
+      </Navbar>
+      {landingPageIsOpen && <LandingPage />}
+      {menuIsOpen && <MenuPage />}
     </>
-  );
-}
-function Navbar() {
-  return (
-    <nav className="navbarDiv">
-      <div>
-        <h2>NEGRAR CAFE</h2>
-      </div>
-      <a className="item" href="#zapis">
-        Dołącz do nas
-      </a>
-      <a className="item" href="#menu">
-        Menu
-      </a>
-      <a className="item" href="#rezerwacje">
-        Rezerwacja
-      </a>
-      <a className="item" href="#oferta">
-        Oferta
-      </a>
-    </nav>
   );
 }

@@ -1,0 +1,122 @@
+$primary-black: #2b2828;
+$primary-white: #f4eded;
+$primary-orange: #e67e22;
+$secondary-orange: #a64b00;
+
+.primaryWhiteOnPrimamryBlack {
+  background-color: $primary-black;
+  color: $primary-white;
+  a {
+    background-color: $primary-black;
+    color: $primary-white;
+  }
+}
+.primaryBlackOnPrimamryWhite {
+  background-color: $primary-white;
+  color: $primary-black;
+  a {
+    background-color: $primary-white;
+    color: $primary-black;
+  }
+}
+.primaryWhiteOnprimaryOrange {
+  background-color: $primary-orange;
+  color: $primary-white;
+}
+
+.hoverLightOrange {
+  a:hover {
+    background-color: $primary-orange;
+  }
+}
+.hoverDarkOrange {
+  a:hover {
+    background-color: $secondary-orange;
+  }
+}
+
+.navbarDiv {
+  top: 0;
+  width: 100%;
+  position: sticky;
+
+  display: grid;
+  text-align: center;
+  z-index: 1;
+  select {
+    display: none;
+  }
+  a {
+    cursor: pointer;
+    font-family: "PlaypenSans";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.5s;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navbarDiv {
+    height: 10vh;
+    select {
+      display: none;
+    }
+    .item {
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 2rem !important;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbarDiv {
+    height: 8vh;
+    .item {
+      font-size: 0.9rem;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbarDiv {
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    select {
+      display: flex;
+    }
+    .item {
+      display: none;
+    }
+    select {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: $primary-orange;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.5rem;
+      option {
+        font-style: italic;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .showFirst {
+    .item:nth-child(1) {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      font-size: 1rem;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

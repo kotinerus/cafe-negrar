@@ -1,0 +1,188 @@
+$primary-black: #2b2828;
+$primary-white: #f4eded;
+$primary-orange: #e67e22;
+$secondary-orange: #a64b00;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "PlaypenSans";
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeDiv {
+  height: 100vh;
+  img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+  article {
+    position: absolute;
+    top: 0%;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top: 8vh;
+    color: $primary-black;
+    h1 {
+      font-style: italic;
+      font-family: "Young Serif";
+    }
+    form {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      column-gap: 2rem;
+      align-items: center;
+      width: 50%;
+      input,
+      button {
+        border: none;
+        text-align: center;
+        border: solid 2px $primary-black;
+        border-radius: 45px;
+      }
+      button {
+        cursor: pointer;
+        background-color: $primary-black;
+        color: $primary-white;
+        transition: 0.4s;
+      }
+      button:hover {
+        background-color: $primary-orange;
+        border-color: $primary-orange;
+        color: $primary-black;
+      }
+    }
+  }
+}
+
+.btn-info {
+  position: relative;
+  width: 50%;
+  line-height: 4rem;
+  border: none;
+  border-radius: 45px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: $primary-orange;
+  cursor: pointer;
+  font-family: "PlaypenSans";
+  font-style: italic;
+  font-weight: 900;
+}
+.btn-info:hover {
+  transition: 0.4s;
+  color: $primary-white;
+}
+footer {
+  height: 5vh;
+  background-color: $primary-black;
+  color: $primary-white;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .welcomeDiv {
+    article {
+      line-height: 2rem;
+      h1 {
+        font-size: 10rem;
+        letter-spacing: 2rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+      h2:nth-child(3) {
+        color: #a64b00;
+      }
+
+      form {
+        input,
+        button {
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+
+  //
+  .btn-info {
+    width: 50%;
+    line-height: 3rem;
+    font-size: 1.3rem;
+  }
+  footer {
+    height: 5vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .welcomeDiv {
+    article {
+      line-height: 2rem;
+      h1 {
+        font-size: 6rem;
+        letter-spacing: 2rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      h2:nth-child(3) {
+        color: #a64b00;
+      }
+
+      form {
+        input,
+        button {
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .welcomeDiv {
+    article {
+      line-height: 1rem;
+      h1 {
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      h2:nth-child(3) {
+        color: #a64b00;
+      }
+
+      form {
+        justify-content: center;
+        width: 80%;
+        input,
+        button {
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .btn-info {
+    line-height: 2rem;
+    width: 80%;
+    font-size: 1rem;
+  }
+  footer {
+    height: 5vh;
+    font-size: 0.8rem;
+  }
+}
