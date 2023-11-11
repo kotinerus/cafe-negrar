@@ -2,4 +2,7 @@
 @font-face {
   font-family: PlaypenSans;
   src: url(./PlaypenSans-VariableFont_wght.ttf);
-}/*# sourceMappingURL=AppStyles.css.map */
+} /*# sourceMappingURL=AppStyles.css.map */
+html {
+  height: 100%;
+}

@@ -4,7 +4,7 @@ import office from "../imgs/office.jpg";
 import waiter from "../imgs/waiterJPG.jpeg";
 import { PanelImgRight, PanelImgLeft } from "../PANELS/Panels";
 import "./landingPageStyles.css";
-
+import { Button } from "../ButtonComponent/Button.js";
 export function LandingPage() {
   return (
     <>
@@ -82,7 +82,4 @@ function Welcome() {
       </article>
     </div>
   );
-}
-export function Button({ children }) {
-  return <button className="btn-info">{children}</button>;
 }

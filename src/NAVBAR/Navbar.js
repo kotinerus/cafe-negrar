@@ -4,7 +4,7 @@ export function Navbar({
   colorPallete,
   colorHover,
   gridTemplate = "3fr 1fr 1fr 1fr ",
-  showFirst,
+  showFirst = true,
 }) {
   return (
     <nav

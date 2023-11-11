@@ -65,24 +65,6 @@ body {
   }
 }
 
-.btn-info {
-  position: relative;
-  width: 50%;
-  line-height: 4rem;
-  border: none;
-  border-radius: 45px;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  background-color: $primary-orange;
-  cursor: pointer;
-  font-family: "PlaypenSans";
-  font-style: italic;
-  font-weight: 900;
-}
-.btn-info:hover {
-  transition: 0.4s;
-  color: $primary-white;
-}
 footer {
   height: 5vh;
   background-color: $primary-black;
@@ -115,11 +97,7 @@ footer {
   }
 
   //
-  .btn-info {
-    width: 50%;
-    line-height: 3rem;
-    font-size: 1.3rem;
-  }
+
   footer {
     height: 5vh;
   }

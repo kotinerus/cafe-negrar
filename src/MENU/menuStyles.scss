@@ -11,7 +11,6 @@ body {
   flex-direction: column;
 }
 .menuPositionsPanels {
-  position: absolute;
   background-color: $backgroung-primary;
   width: 100vw;
   top: 8vh;
@@ -24,19 +23,112 @@ body {
   grid-row-gap: 2rem;
   background-color: $backgroung-secondary;
   .item {
-    margin-top: 2rem;
-    background-color: lighten($backgroung-primary, $amount: 15);
-    color: $color-secondary;
-    width: 70%;
-    justify-self: center;
-    height: auto;
-    padding: 2rem 0rem;
-    border-radius: 45px;
-    img {
-      width: 50%;
+    background-color: #2b2828;
+    color: #f4eded;
+    margin: 2rem 1rem;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+    .base {
+      position: relative;
+      width: 90%;
+      left: 5%;
     }
-    h2 {
-      text-transform: uppercase;
+    .wrapper-img {
+      min-height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-height: 250px;
+        max-width: 90%;
+      }
+    }
+
+    .wrapper-name {
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        // background-color: green;
+      }
+    }
+
+    .wrapper-price {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      .product {
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+        border-radius: 45px;
+        background-color: #e67e22;
+        color: #2b2828;
+        cursor: pointer;
+      }
+      .product:hover {
+        background-color: $backgroung-secondary;
+        color: $color-primary;
+
+        transition: 0.5s;
+      }
+      .product:focus {
+        background-color: $backgroung-secondary;
+        color: $color-primary;
+      }
+    }
+    .wrapper-button {
+      .buttonObject {
+        background-color: $backgroung-info-primary;
+        border: none;
+        border-radius: 45px;
+        font-family: Lato;
+        width: 60%;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .buttonObject:hover {
+        background-color: $backgroung-secondary;
+        color: $color-primary;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+.shoppingCart {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 10%;
+  background-color: $backgroung-info-primary;
+  border-radius: 25px;
+  top: 90%;
+  left: 90%;
+  svg {
+    height: 60%;
+    width: 60%;
+  }
+  svg:hover {
+    animation-name: shake;
+    // background-color: red;
+    animation-duration: 1s;
+  }
+  @keyframes shake {
+    40% {
+      rotate: -15deg;
+    }
+    70% {
+      rotate: 15deg;
     }
   }
 }

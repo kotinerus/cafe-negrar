@@ -4,63 +4,6 @@ import { Navbar } from "./NAVBAR/Navbar";
 import "./mainStyles/AppStyles.css";
 
 import { MenuPage } from "./MENU/MenuPage";
-const listOfCoffes = [
-  {
-    name: "Czarna",
-    price: 8,
-  },
-  {
-    name: "Kawa z mlekiem",
-    price: 8,
-  },
-  {
-    name: "Cappucino",
-    price: [10, 12, 14],
-    category: "kawa",
-    specialOffert: false,
-    imgSrc: "name/urlOfImg",
-  },
-  {
-    name: "Americano",
-    price: 8,
-  },
-  {
-    name: "Late Macchiato",
-    price: 8,
-  },
-  {
-    name: "Cafe au lait",
-    price: 8,
-  },
-  {
-    name: "Ristretto",
-    price: 8,
-  },
-  {
-    name: "Espresso",
-    price: 8,
-  },
-  {
-    name: "Espresso lungo",
-    price: 8,
-  },
-  {
-    name: "Espresso double",
-    price: 8,
-  },
-  {
-    name: "Caffe creama",
-    price: 8,
-  },
-  {
-    name: "Espresso macchiato",
-    price: 8,
-  },
-  {
-    name: "Melange",
-    price: 8,
-  },
-];
 
 export default function App() {
   const [landingPageIsOpen, setLandingPageIsOpen] = useState(true);
