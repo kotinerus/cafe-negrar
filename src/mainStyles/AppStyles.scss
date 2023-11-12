@@ -9,3 +9,7 @@ $secondary-orange: #a64b00;
   font-family: PlaypenSans;
   src: url(./PlaypenSans-VariableFont_wght.ttf);
 }
+html,
+body {
+  scroll-behavior: smooth;
+}

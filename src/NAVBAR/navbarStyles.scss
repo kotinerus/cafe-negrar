@@ -86,15 +86,32 @@ $secondary-orange: #a64b00;
   .navbarDiv {
     height: 8vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    select {
-      display: flex;
+
+    .showStill {
+      select {
+        display: none;
+      }
+      .item {
+        display: flex !important;
+      }
+      .item:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        font-size: 1rem;
+        height: 100%;
+        width: 100%;
+      }
     }
+  }
+  .changeToSelect {
     .item {
       display: none;
     }
     select {
+      display: flex;
       width: 100%;
       height: 100%;
       border: none;
@@ -107,16 +124,6 @@ $secondary-orange: #a64b00;
         font-style: italic;
         font-size: 1.5rem;
       }
-    }
-  }
-  .showFirst {
-    .item:nth-child(1) {
-      display: flex;
-      justify-content: center;
-      align-self: center;
-      font-size: 1rem;
-      height: 100%;
-      width: 100%;
     }
   }
 }

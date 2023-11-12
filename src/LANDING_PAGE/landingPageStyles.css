@@ -8,136 +8,215 @@ body {
   flex-direction: column;
 }
 
-.welcomeDiv {
-  height: 100vh;
-}
-.welcomeDiv img {
-  height: 100vh;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0.5;
-}
-.welcomeDiv article {
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  top: 8vh;
-  color: #2b2828;
-}
-.welcomeDiv article h1 {
-  font-style: italic;
-  font-family: "Young Serif";
-}
-.welcomeDiv article form {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-  align-items: center;
-  width: 50%;
-}
-.welcomeDiv article form input,
-.welcomeDiv article form button {
-  border: none;
-  text-align: center;
-  border: solid 2px #2b2828;
-  border-radius: 45px;
-}
-.welcomeDiv article form button {
-  cursor: pointer;
-  background-color: #2b2828;
-  color: #f4eded;
-  transition: 0.4s;
-}
-.welcomeDiv article form button:hover {
-  background-color: #e67e22;
-  border-color: #e67e22;
-  color: #2b2828;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-footer {
-  height: 5vh;
-  background-color: #2b2828;
-  color: #f4eded;
-  text-align: center;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2b2828;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e67e22;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a64b00;
 }
 
 @media only screen and (min-width: 1024px) {
+  .welcomeDiv {
+    height: 90vh;
+  }
+  .welcomeDiv img {
+    height: 90vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0.45;
+  }
   .welcomeDiv article {
-    line-height: 2rem;
+    position: absolute;
+    line-height: 0.5rem;
+    width: 100%;
+    height: 100%;
+    top: 8vh;
+    font-family: "Young Serif";
+    color: #2b2828;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .welcomeDiv article h1 {
+    font-style: italic;
     font-size: 10rem;
-    letter-spacing: 2rem;
+    letter-spacing: 2.5rem;
   }
   .welcomeDiv article h2 {
     font-size: 2.5rem;
   }
-  .welcomeDiv article h2:nth-child(3) {
-    color: #a64b00;
+  .welcomeDiv article form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    align-items: center;
+    width: 50%;
   }
   .welcomeDiv article form input,
   .welcomeDiv article form button {
     line-height: 3rem;
+    border-radius: 45px;
+    font-size: 1rem;
+    border: none;
+    border: 1px #2b2828 solid;
+    text-align: center;
+  }
+  .welcomeDiv article form button {
+    background-color: #e67e22;
+    font-weight: 600;
+  }
+  .welcomeDiv article form input:focus {
+    outline: 3px #e67e22 solid;
+    transition: 0.1s;
   }
   footer {
     height: 5vh;
+    background-color: #2b2828;
+    color: #f4eded;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .welcomeDiv {
+    height: 90vh;
+  }
+  .welcomeDiv img {
+    height: 90vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0.45;
+  }
   .welcomeDiv article {
-    line-height: 2rem;
+    position: absolute;
+    line-height: 0.5rem;
+    width: 100%;
+    height: 100%;
+    top: 8vh;
+    font-family: "Young Serif";
+    color: #2b2828;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .welcomeDiv article h1 {
-    font-size: 6rem;
+    font-style: italic;
+    font-size: 8rem;
     letter-spacing: 2rem;
   }
   .welcomeDiv article h2 {
     font-size: 2rem;
   }
-  .welcomeDiv article h2:nth-child(3) {
-    color: #a64b00;
-  }
-  .welcomeDiv article form input,
-  .welcomeDiv article form button {
-    line-height: 2.5rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .welcomeDiv article {
-    line-height: 1rem;
-  }
-  .welcomeDiv article h1 {
-    font-size: 4rem;
-    letter-spacing: 0.2rem;
-  }
-  .welcomeDiv article h2 {
-    font-size: 1.2rem;
-  }
-  .welcomeDiv article h2:nth-child(3) {
-    color: #a64b00;
-  }
   .welcomeDiv article form {
-    justify-content: center;
-    width: 80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    align-items: center;
+    width: 70%;
   }
   .welcomeDiv article form input,
   .welcomeDiv article form button {
-    line-height: 1.5rem;
-  }
-  .btn-info {
-    line-height: 2rem;
-    width: 80%;
+    line-height: 3rem;
+    border-radius: 45px;
     font-size: 1rem;
+    border: none;
+    border: 1px #2b2828 solid;
+    text-align: center;
+  }
+  .welcomeDiv article form button {
+    background-color: #e67e22;
+    font-weight: 600;
+  }
+  .welcomeDiv article form input:focus {
+    outline: 3px #e67e22 solid;
+    transition: 0.1s;
   }
   footer {
     height: 5vh;
-    font-size: 0.8rem;
+    background-color: #2b2828;
+    color: #f4eded;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .welcomeDiv {
+    height: 100vh;
+  }
+  .welcomeDiv img {
+    height: 100vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0.45;
+  }
+  .welcomeDiv article {
+    position: absolute;
+    line-height: 0.5rem;
+    width: 100%;
+    height: 100%;
+    top: 8vh;
+    font-family: "Young Serif";
+    color: #2b2828;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcomeDiv article h1 {
+    font-style: italic;
+    font-size: 6rem;
+    letter-spacing: 1rem;
+  }
+  .welcomeDiv article h2 {
+    font-size: 2rem;
+  }
+  .welcomeDiv article form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    align-items: center;
+    width: 70%;
+  }
+  .welcomeDiv article form input,
+  .welcomeDiv article form button {
+    line-height: 3rem;
+    border-radius: 45px;
+    font-size: 1rem;
+    border: none;
+    border: 1px #2b2828 solid;
+    text-align: center;
+  }
+  .welcomeDiv article form button {
+    background-color: #e67e22;
+    font-weight: 600;
+  }
+  .welcomeDiv article form input:focus {
+    outline: 3px #e67e22 solid;
+    transition: 0.1s;
+  }
+  footer {
+    height: 5vh;
+    background-color: #2b2828;
+    color: #f4eded;
+    text-align: center;
   }
 }/*# sourceMappingURL=landingPageStyles.css.map */

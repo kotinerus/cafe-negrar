@@ -1,13 +1,1 @@
-@media only screen and (min-width: 1024px) {
-  .btn-info:hover {
-    transition: 0.4s;
-    color: #f4eded;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .btn-info {
-    line-height: 2rem;
-    width: 80%;
-    font-size: 1rem;
-  }
-}/*# sourceMappingURL=ButtonStyles.css.map */
+/*# sourceMappingURL=ButtonStyles.css.map */

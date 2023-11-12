@@ -11,156 +11,220 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.welcomeDiv {
-  height: 100vh;
-  img {
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-  }
-  article {
-    position: absolute;
-    top: 0%;
-
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    top: 8vh;
-    color: $primary-black;
-    h1 {
-      font-style: italic;
-      font-family: "Young Serif";
-    }
-    form {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      column-gap: 2rem;
-      align-items: center;
-      width: 50%;
-      input,
-      button {
-        border: none;
-        text-align: center;
-        border: solid 2px $primary-black;
-        border-radius: 45px;
-      }
-      button {
-        cursor: pointer;
-        background-color: $primary-black;
-        color: $primary-white;
-        transition: 0.4s;
-      }
-      button:hover {
-        background-color: $primary-orange;
-        border-color: $primary-orange;
-        color: $primary-black;
-      }
-    }
-  }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-footer {
-  height: 5vh;
-  background-color: $primary-black;
-  color: $primary-white;
-  text-align: center;
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primary-black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-orange;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary-orange;
 }
 
 @media only screen and (min-width: 1024px) {
   .welcomeDiv {
+    height: 90vh;
+    img {
+      height: 90vh;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0.45;
+    }
     article {
-      line-height: 2rem;
+      position: absolute;
+      line-height: 0.5rem;
+      width: 100%;
+      height: 100%;
+      top: 8vh;
+
+      font-family: "Young Serif";
+      color: $primary-black;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       h1 {
+        font-style: italic;
         font-size: 10rem;
-        letter-spacing: 2rem;
+        letter-spacing: 2.5rem;
       }
       h2 {
         font-size: 2.5rem;
       }
-      h2:nth-child(3) {
-        color: #a64b00;
-      }
-
       form {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+        align-items: center;
+
+        width: 50%;
         input,
         button {
           line-height: 3rem;
+          border-radius: 45px;
+          font-size: 1rem;
+          border: none;
+          border: 1px $primary-black solid;
+          text-align: center;
+        }
+        button {
+          background-color: $primary-orange;
+          font-weight: 600;
+        }
+        input:focus {
+          outline: 3px $primary-orange solid;
+          transition: 0.1s;
         }
       }
     }
   }
-
-  //
-
   footer {
     height: 5vh;
+    background-color: $primary-black;
+    color: $primary-white;
+    text-align: center;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .welcomeDiv {
+    height: 90vh;
+    img {
+      height: 90vh;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0.45;
+    }
     article {
-      line-height: 2rem;
+      position: absolute;
+      line-height: 0.5rem;
+      width: 100%;
+      height: 100%;
+      top: 8vh;
+
+      font-family: "Young Serif";
+      color: $primary-black;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       h1 {
-        font-size: 6rem;
+        font-style: italic;
+        font-size: 8rem;
         letter-spacing: 2rem;
       }
       h2 {
         font-size: 2rem;
       }
-      h2:nth-child(3) {
-        color: #a64b00;
-      }
-
       form {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+        align-items: center;
+
+        width: 70%;
         input,
         button {
-          line-height: 2.5rem;
+          line-height: 3rem;
+          border-radius: 45px;
+          font-size: 1rem;
+          border: none;
+          border: 1px $primary-black solid;
+          text-align: center;
+        }
+        button {
+          background-color: $primary-orange;
+          font-weight: 600;
+        }
+        input:focus {
+          outline: 3px $primary-orange solid;
+          transition: 0.1s;
         }
       }
     }
+  }
+  footer {
+    height: 5vh;
+    background-color: $primary-black;
+    color: $primary-white;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .welcomeDiv {
+    height: 100vh;
+    img {
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0.45;
+    }
     article {
-      line-height: 1rem;
+      position: absolute;
+      line-height: 0.5rem;
+      width: 100%;
+      height: 100%;
+      top: 8vh;
+
+      font-family: "Young Serif";
+      color: $primary-black;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       h1 {
-        font-size: 4rem;
-        letter-spacing: 0.2rem;
+        font-style: italic;
+        font-size: 6rem;
+        letter-spacing: 1rem;
       }
       h2 {
-        font-size: 1.2rem;
+        font-size: 2rem;
       }
-      h2:nth-child(3) {
-        color: #a64b00;
-      }
-
       form {
-        justify-content: center;
-        width: 80%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+        align-items: center;
+
+        width: 70%;
         input,
         button {
-          line-height: 1.5rem;
+          line-height: 3rem;
+          border-radius: 45px;
+          font-size: 1rem;
+          border: none;
+          border: 1px $primary-black solid;
+          text-align: center;
+        }
+        button {
+          background-color: $primary-orange;
+          font-weight: 600;
+        }
+        input:focus {
+          outline: 3px $primary-orange solid;
+          transition: 0.1s;
         }
       }
     }
   }
-
-  .btn-info {
-    line-height: 2rem;
-    width: 80%;
-    font-size: 1rem;
-  }
   footer {
     height: 5vh;
-    font-size: 0.8rem;
+    background-color: $primary-black;
+    color: $primary-white;
+    text-align: center;
   }
 }

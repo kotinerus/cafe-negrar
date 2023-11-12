@@ -14,10 +14,11 @@ const panels = [
 ];
 
 export function MenuPage() {
-  const [currentPanel, setCurrentPanel] = useState(null);
+  const [currentPanel, setCurrentPanel] = useState("");
   function onCurrentPanel(e) {
-    currentPanel === e ? setCurrentPanel(null) : setCurrentPanel(e);
+    currentPanel === e ? setCurrentPanel("") : setCurrentPanel(e);
   }
+
   return (
     <>
       <Navbar
@@ -30,25 +31,21 @@ export function MenuPage() {
           <a
             className="item"
             value={e.value}
-            onClick={(e) =>
-              onCurrentPanel(e.currentTarget.getAttribute("value"))
-            }
+            onClick={(e) => onCurrentPanel(e.target.getAttribute("value"))}
             key={e.id}
           >
             {e.text}
           </a>
         ))}
 
-        <select name="postions" id="postions">
+        <select
+          name="postions"
+          id="postions"
+          value={currentPanel}
+          onChange={(e) => onCurrentPanel(e.currentTarget.value)}
+        >
           {panels.map((e) => (
-            <option
-              className="item"
-              value={e.value}
-              onClick={(e) =>
-                onCurrentPanel(e.currentTarget.getAttribute("value"))
-              }
-              key={e.id}
-            >
+            <option value={e.value} key={e.id}>
               {e.text}
             </option>
           ))}
@@ -62,7 +59,7 @@ export function MenuPage() {
 }
 function PositionList({ currentPanel }) {
   const filterArray =
-    currentPanel !== null
+    currentPanel !== ""
       ? listOfPositions.filter((i) => i.type === currentPanel)
       : listOfPositions;
 
@@ -102,7 +99,7 @@ function PositionList({ currentPanel }) {
               key={crypto.randomUUID()}
             >
               <h4>{item.size}</h4>
-              <h4>{item.price}</h4>
+              <h4>{item.price}zł</h4>
             </div>
           ))}
         </div>

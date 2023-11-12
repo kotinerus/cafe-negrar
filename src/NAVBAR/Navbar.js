@@ -4,13 +4,13 @@ export function Navbar({
   colorPallete,
   colorHover,
   gridTemplate = "3fr 1fr 1fr 1fr ",
-  showFirst = true,
+  showFirst = false,
 }) {
   return (
     <nav
       style={{ gridTemplateColumns: gridTemplate }}
       className={`navbarDiv ${colorPallete} ${colorHover} ${
-        showFirst === true ? "showFirst" : ""
+        showFirst === true ? "showFirst" : "changeToSelect"
       } `}
     >
       {children}

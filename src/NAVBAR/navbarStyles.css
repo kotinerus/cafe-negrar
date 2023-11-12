@@ -79,16 +79,28 @@
   .navbarDiv {
     height: 8vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
-  .navbarDiv select {
-    display: flex;
-  }
-  .navbarDiv .item {
+  .navbarDiv .showStill select {
     display: none;
   }
-  .navbarDiv select {
+  .navbarDiv .showStill .item {
+    display: flex !important;
+  }
+  .navbarDiv .showStill .item:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 1rem;
+    height: 100%;
+    width: 100%;
+  }
+  .changeToSelect .item {
+    display: none;
+  }
+  .changeToSelect select {
+    display: flex;
     width: 100%;
     height: 100%;
     border: none;
@@ -98,16 +110,8 @@
     font-weight: 500;
     font-size: 1.5rem;
   }
-  .navbarDiv select option {
+  .changeToSelect select option {
     font-style: italic;
     font-size: 1.5rem;
-  }
-  .showFirst .item:nth-child(1) {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    font-size: 1rem;
-    height: 100%;
-    width: 100%;
   }
 }/*# sourceMappingURL=navbarStyles.css.map */

@@ -35,6 +35,7 @@ import creamPie from "./imgsOfPositions/creamPie.png";
 
 import coffePie from "./imgsOfPositions/coffePlusPie.png";
 import coffeSandwich from "./imgsOfPositions/coffePlusSandwich.png";
+
 export const listOfPositions = [
   {
     id: 1,

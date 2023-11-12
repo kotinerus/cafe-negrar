@@ -1,19 +1,17 @@
 import "./panelsStyles.css";
 
-export function PanelImgLeft({ panelPallete = "panel-primary", id, children }) {
+export function Panel({ children, object }) {
+  const { id, imgPosition, backgroundColor, color } = object;
   return (
-    <div className={`panel ${panelPallete} imgLeft`} id={id}>
-      {children}
-    </div>
-  );
-}
-export function PanelImgRight({
-  panelPallete = "panel-primary",
-  id,
-  children,
-}) {
-  return (
-    <div className={`panel ${panelPallete} imgRight`} id={id}>
+    <div
+      className={"panel"}
+      id={id}
+      style={
+        imgPosition === "left"
+          ? { gridTemplateAreas: `"img text"`, backgroundColor, color }
+          : { gridTemplateAreas: `"text img"`, backgroundColor, color }
+      }
+    >
       {children}
     </div>
   );
