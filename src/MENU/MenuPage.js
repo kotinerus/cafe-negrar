@@ -81,7 +81,7 @@ function PositionList({ currentPanel }) {
     return (
       <section className="item">
         <div className="base wrapper-img ">
-          <img src={img} />
+          <img src={img} loading="lazy" />
         </div>
         <div className="base wrapper-name">
           <h2>{name}</h2>

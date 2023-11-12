@@ -1,11 +1,9 @@
 import "./mainStyles/AppStyles.css";
 import { Navbar } from "./NAVBAR/Navbar";
-import { useCurrentPage } from "./useCurrentPage";
 
 import { LandingPage } from "./LANDING_PAGE/LandingPage";
 import { MenuPage } from "./MENU/MenuPage";
 import { useState, useEffect } from "react";
-import { type } from "@testing-library/user-event/dist/type";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState(<LandingPage />);
@@ -34,20 +32,6 @@ export default function App() {
             {i.text}
           </a>
         ))}
-
-        {/* <select
-          name="postions"
-          value={currentPage}
-          onChange={(i) =>
-            setCurrentPage(panels.filter((e) => e.id === i.target.value).value)
-          }
-        >
-          {panels.map((i) => (
-            <option value={i.id} key={i.id}>
-              {i.text}
-            </option>
-          ))}
-        </select> */}
       </Navbar>
       {currentPage}
     </>

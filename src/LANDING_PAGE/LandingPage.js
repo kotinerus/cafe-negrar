@@ -9,7 +9,7 @@ export function LandingPage({ onChangePage }) {
   return (
     <>
       <div className="welcomeDiv">
-        <img src={waiter} />
+        <img src={waiter} loading="lazy" />
         <article id="zapis">
           <h1>NEGRAR</h1>
           <h2>Zapisz się do newslettera</h2>

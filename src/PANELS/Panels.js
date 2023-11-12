@@ -4,6 +4,7 @@ export function Panel({ children, object }) {
   const { id, imgPosition, backgroundColor, color } = object;
   return (
     <div
+      loading="lazy"
       className={"panel"}
       id={id}
       style={
