@@ -2,8 +2,8 @@
 @font-face {
   font-family: PlaypenSans;
   src: url(./PlaypenSans-VariableFont_wght.ttf);
-} /*# sourceMappingURL=AppStyles.css.map */
+}
 html,
 body {
   scroll-behavior: smooth;
-}
+}/*# sourceMappingURL=AppStyles.css.map */

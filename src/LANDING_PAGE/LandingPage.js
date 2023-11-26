@@ -9,7 +9,6 @@ export function LandingPage({ onChangePage }) {
   return (
     <>
       <div className="welcomeDiv">
-        <img src={waiter} loading="lazy" />
         <article id="zapis">
           <h1>NEGRAR</h1>
           <h2>Zapisz się do newslettera</h2>
@@ -17,6 +16,7 @@ export function LandingPage({ onChangePage }) {
             <input placeholder="Wpisz swojego maila" />
             <button>WYŚLIJ</button>
           </form>
+          <img src={waiter} loading="lazy" />
         </article>
       </div>
       {listOfPanels.map((i) => (
