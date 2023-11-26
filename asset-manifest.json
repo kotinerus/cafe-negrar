@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cafe-negrar/static/css/main.433fc2af.css",
-    "main.js": "/cafe-negrar/static/js/main.8c005c7b.js",
+    "main.css": "/cafe-negrar/static/css/main.2f2ca71c.css",
+    "main.js": "/cafe-negrar/static/js/main.a3840f36.js",
     "static/media/coffee-beans-background.png": "/cafe-negrar/static/media/coffee-beans-background.d75f7b451a84280c2320.png",
     "static/media/office.jpg": "/cafe-negrar/static/media/office.4dc4b18ffac781473d39.jpg",
     "static/media/sandwichCheese.png": "/cafe-negrar/static/media/sandwichCheese.451962a26dda36cef5e4.png",
@@ -25,27 +25,27 @@
     "static/media/cafeSanta.png": "/cafe-negrar/static/media/cafeSanta.f8ebcbb5e73aa6474ca0.png",
     "static/media/gingerbreadEspresso.png": "/cafe-negrar/static/media/gingerbreadEspresso.19e429fd793b21129182.png",
     "static/media/liquoriceMacchiato.png": "/cafe-negrar/static/media/liquoriceMacchiato.f79d12fe019307c5a7a7.png",
-    "static/media/cafeCreme.png": "/cafe-negrar/static/media/cafeCreme.c43fd3fd937ee890a947.png",
+    "static/media/cafeCreme.png": "/cafe-negrar/static/media/cafeCreme.17ad960104fc5d55de23.png",
     "static/media/espressoDoppio.png": "/cafe-negrar/static/media/espressoDoppio.5687aa669eb5485e861b.png",
     "static/media/cappuzino.png": "/cafe-negrar/static/media/cappuzino.4ed2050fc8b3836c69ef.png",
     "static/media/gingerHoneySurprise.png": "/cafe-negrar/static/media/gingerHoneySurprise.9c4720cc7fdbaf49d620.png",
-    "static/media/cappucino.png": "/cafe-negrar/static/media/cappucino.03458e7768f7690639c0.png",
     "static/media/biscuitLatte.png": "/cafe-negrar/static/media/biscuitLatte.14cd988a8d9ae1af3b18.png",
+    "static/media/cappucino.png": "/cafe-negrar/static/media/cappucino.4e6e5a178540f52e2d57.png",
     "static/media/flatWhite.png": "/cafe-negrar/static/media/flatWhite.d823c274b4f3cae3f4f7.png",
     "static/media/working-men.jpg": "/cafe-negrar/static/media/working-men.265bcb1f409077529e82.jpg",
     "static/media/cortado.png": "/cafe-negrar/static/media/cortado.a51c0ec9a5eaec41c7ba.png",
     "static/media/americano.png": "/cafe-negrar/static/media/americano.e189db2deb3751d6b82e.png",
     "static/media/lungo.png": "/cafe-negrar/static/media/lungo.66ac018fe6c2b74886fc.png",
     "static/media/macchiato.png": "/cafe-negrar/static/media/macchiato.e3bff32068e610264308.png",
-    "static/media/latteMacchiato.png": "/cafe-negrar/static/media/latteMacchiato.f1190f88bc547a75ee9e.png",
     "static/media/ristretto.png": "/cafe-negrar/static/media/ristretto.5f70365d430c5e53ae51.png",
     "static/media/espresso.png": "/cafe-negrar/static/media/espresso.9c78ae52848ccb09758e.png",
+    "static/media/latteMacchiato.png": "/cafe-negrar/static/media/latteMacchiato.85cfd7dfb8ed1119be99.png",
     "index.html": "/cafe-negrar/index.html",
-    "main.433fc2af.css.map": "/cafe-negrar/static/css/main.433fc2af.css.map",
-    "main.8c005c7b.js.map": "/cafe-negrar/static/js/main.8c005c7b.js.map"
+    "main.2f2ca71c.css.map": "/cafe-negrar/static/css/main.2f2ca71c.css.map",
+    "main.a3840f36.js.map": "/cafe-negrar/static/js/main.a3840f36.js.map"
   },
   "entrypoints": [
-    "static/css/main.433fc2af.css",
-    "static/js/main.8c005c7b.js"
+    "static/css/main.2f2ca71c.css",
+    "static/js/main.a3840f36.js"
   ]
 }
