@@ -1,7 +1,5 @@
-$primary-black: #2b2828;
-$primary-white: #f4eded;
-$primary-orange: #e67e22;
-$secondary-orange: #a64b00;
+@import "../utilites/variables";
+
 body {
   margin: 0;
   padding: 0;
@@ -23,12 +21,12 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $primary-orange;
+  background: $secondary;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $secondary-orange;
+  background: $primary;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -81,11 +79,12 @@ body {
           text-align: center;
         }
         button {
-          background-color: $primary-orange;
+          background-color: $primary;
           font-weight: 600;
+          color: $primary-black;
         }
         input:focus {
-          outline: 3px $primary-orange solid;
+          outline: 3px $primary solid;
           transition: 0.1s;
         }
       }
@@ -101,20 +100,12 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .welcomeDiv {
-    height: 90vh;
-    img {
-      height: 90vh;
-      width: 100%;
-      object-fit: cover;
-      opacity: 0.45;
-    }
+    min-height: 100vh;
     article {
-      position: absolute;
+      position: relative;
       line-height: 0.5rem;
       width: 100%;
-      height: 100%;
-      top: 8vh;
-
+      min-height: 100vh;
       font-family: "Young Serif";
       color: $primary-black;
 
@@ -122,6 +113,16 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding-bottom: 2rem;
+      img {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: calc(100% + 2rem);
+        object-fit: cover;
+        opacity: 0.3;
+      }
       h1 {
         font-style: italic;
         font-size: 8rem;
@@ -147,11 +148,11 @@ body {
           text-align: center;
         }
         button {
-          background-color: $primary-orange;
+          background-color: $primary;
           font-weight: 600;
         }
         input:focus {
-          outline: 3px $primary-orange solid;
+          outline: 3px $primary solid;
           transition: 0.1s;
         }
       }
@@ -167,20 +168,12 @@ body {
 
 @media only screen and (max-width: 767px) {
   .welcomeDiv {
-    height: 100vh;
-    img {
-      height: 100vh;
-      width: 100%;
-      object-fit: cover;
-      opacity: 0.45;
-    }
+    min-height: 100vh;
     article {
-      position: absolute;
+      position: relative;
       line-height: 0.5rem;
       width: 100%;
-      height: 100%;
-      top: 8vh;
-
+      min-height: 100vh;
       font-family: "Young Serif";
       color: $primary-black;
 
@@ -188,6 +181,16 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding-bottom: 2rem;
+      img {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: calc(100% + 2rem);
+        object-fit: cover;
+        opacity: 0.3;
+      }
       h1 {
         font-style: italic;
         font-size: 6rem;
@@ -213,11 +216,11 @@ body {
           text-align: center;
         }
         button {
-          background-color: $primary-orange;
+          background-color: $primary;
           font-weight: 600;
         }
         input:focus {
-          outline: 3px $primary-orange solid;
+          outline: 3px $primary solid;
           transition: 0.1s;
         }
       }

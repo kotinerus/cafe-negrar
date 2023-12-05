@@ -1,7 +1,4 @@
-$primary-black: #2b2828;
-$primary-white: #f4eded;
-$primary-orange: #e67e22;
-$secondary-orange: #a64b00;
+@import "../utilites/variables";
 
 .primaryWhiteOnPrimamryBlack {
   background-color: $primary-black;
@@ -20,18 +17,18 @@ $secondary-orange: #a64b00;
   }
 }
 .primaryWhiteOnprimaryOrange {
-  background-color: $primary-orange;
+  background-color: $primary;
   color: $primary-white;
 }
 
 .hoverLightOrange {
   a:hover {
-    background-color: $primary-orange;
+    background-color: $primary;
   }
 }
 .hoverDarkOrange {
   a:hover {
-    background-color: $secondary-orange;
+    background-color: $secondary;
   }
 }
 
@@ -115,7 +112,8 @@ $secondary-orange: #a64b00;
       width: 100%;
       height: 100%;
       border: none;
-      background-color: $primary-orange;
+      background-color: $primary;
+      color: $primary-white;
       text-align: center;
       text-transform: uppercase;
       font-weight: 500;

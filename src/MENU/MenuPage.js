@@ -92,10 +92,10 @@ function PositionList({ currentPanel }) {
               className="product"
               style={
                 selectedSize === item.size
-                  ? { backgroundColor: "white", color: "black" }
+                  ? { backgroundColor: "#f99589", color: "black" }
                   : {}
               }
-              onClick={(e) => onSelectSize(item.size)}
+              onClick={() => onSelectSize(item.size)}
               key={crypto.randomUUID()}
             >
               <h4>{item.size}</h4>

@@ -1,11 +1,5 @@
-$backgroung-primary: #2b2828;
-$backgroung-secondary: #f4eded;
-$backgroung-info-primary: #e67e22;
-$background-info-secondary: #a64b00;
+@import "../utilites/_variables";
 
-$color-primary: #2b2828;
-$color-secondary: #f4eded;
-$color-info-primary: #e67e22;
 @media only screen and (min-width: 1024px) {
   .menuPositionsPanels {
     width: 100vw;
@@ -17,10 +11,10 @@ $color-info-primary: #e67e22;
     align-items: center;
     text-align: center;
     grid-row-gap: 2rem;
-    background-color: $backgroung-secondary;
+    background-color: $primary-white;
     .item {
-      background-color: #2b2828;
-      color: #f4eded;
+      background-color: $primary-black;
+      color: $primary-white;
       margin: 2rem 1rem;
       min-height: 550px;
       display: flex;
@@ -51,9 +45,6 @@ $color-info-primary: #e67e22;
         display: flex;
         justify-content: center;
         align-items: center;
-        h2 {
-          // background-color: green;
-        }
       }
 
       .wrapper-price {
@@ -66,24 +57,24 @@ $color-info-primary: #e67e22;
           justify-content: space-evenly;
           width: 30%;
           border-radius: 45px;
-          background-color: #e67e22;
-          color: #2b2828;
+          background-color: $primary;
+          color: $primary-white;
           cursor: pointer;
         }
         .product:hover {
-          background-color: $backgroung-secondary;
-          color: $color-primary;
+          background-color: $secondary;
+          color: $primary-black;
 
           transition: 0.5s;
         }
         .product:focus {
-          background-color: $backgroung-secondary;
-          color: $color-primary;
+          background-color: $secondary;
+          color: $primary-black;
         }
       }
       .wrapper-button {
         .buttonObject {
-          background-color: $backgroung-info-primary;
+          background-color: $primary;
           border: none;
           border-radius: 45px;
           font-family: Lato;
@@ -92,8 +83,8 @@ $color-info-primary: #e67e22;
           cursor: pointer;
         }
         .buttonObject:hover {
-          background-color: $backgroung-secondary;
-          color: $color-primary;
+          background-color: $secondary;
+          color: $primary-black;
           transition: 0.5s;
         }
       }
@@ -106,7 +97,7 @@ $color-info-primary: #e67e22;
     align-items: center;
     height: 10%;
     width: 10%;
-    background-color: $backgroung-info-primary;
+    background-color: $primary;
     border-radius: 25px;
     top: 90%;
     left: 90%;
@@ -130,10 +121,10 @@ $color-info-primary: #e67e22;
     align-items: center;
     text-align: center;
     grid-row-gap: 2rem;
-    background-color: $backgroung-secondary;
+    background-color: $primary-white;
     .item {
-      background-color: #2b2828;
-      color: #f4eded;
+      background-color: $primary-black;
+      color: $primary-white;
       margin: 2rem 1rem;
       min-height: 550px;
       display: flex;
@@ -176,24 +167,24 @@ $color-info-primary: #e67e22;
           justify-content: space-evenly;
           width: 30%;
           border-radius: 45px;
-          background-color: #e67e22;
-          color: #2b2828;
+          background-color: $primary;
+          color: $primary-black;
           cursor: pointer;
         }
         .product:hover {
-          background-color: $backgroung-secondary;
-          color: $color-primary;
+          background-color: $secondary;
+          color: $primary-black;
 
           transition: 0.5s;
         }
         .product:focus {
-          background-color: $backgroung-secondary;
-          color: $color-primary;
+          background-color: $secondary;
+          color: $primary-black;
         }
       }
       .wrapper-button {
         .buttonObject {
-          background-color: $backgroung-info-primary;
+          background-color: $primary;
           border: none;
           border-radius: 45px;
           font-family: Lato;
@@ -202,8 +193,8 @@ $color-info-primary: #e67e22;
           cursor: pointer;
         }
         .buttonObject:hover {
-          background-color: $backgroung-secondary;
-          color: $color-primary;
+          background-color: $secondary;
+          color: $primary-black;
           transition: 0.5s;
         }
       }
@@ -216,7 +207,7 @@ $color-info-primary: #e67e22;
     align-items: center;
     height: 15%;
     width: 15%;
-    background-color: $backgroung-info-primary;
+    background-color: $primary;
     border-radius: 25px;
     top: 84%;
     left: 84%;
