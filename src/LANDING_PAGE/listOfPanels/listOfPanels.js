@@ -1,7 +1,6 @@
-import coffeBg from "./imgsOfPanels/coffee-beans-background.png";
+import coffeMen from "./imgsOfPanels/man-with-coffe.jpeg";
 import workingMen from "./imgsOfPanels/working-men.jpg";
 import office from "./imgsOfPanels/office.jpg";
-import { Button } from "../../ButtonComponent/Button.js";
 
 export const listOfPanels = [
   {
@@ -20,7 +19,7 @@ export const listOfPanels = [
         </p>
       </section>
     ),
-    img: <img src={coffeBg} />,
+    img: <img src={coffeMen} />,
     imgPosition: "right",
     backgroundColor: "#2b2828",
     color: "#f4eded",

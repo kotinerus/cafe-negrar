@@ -1,5 +1,4 @@
 import "./ButtonStyles.css";
-
 export function Button({
   children,
   classPar,
@@ -13,6 +12,7 @@ export function Button({
   borderRadius = "45px",
   border = "none",
   textTransform = "uppercase",
+  margin = "0px 0px 0px 0px",
 }) {
   return (
     <button
@@ -28,6 +28,7 @@ export function Button({
         borderRadius,
         border,
         textTransform,
+        margin,
       }}
     >
       {children}

@@ -2,6 +2,86 @@
   font-family: Montserrat;
   src: url(../mainStyles/Montserrat-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: MontserratItalic;
+  src: url(../mainStyles/Montserrat-Italic-VariableFont_wght.ttf);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2b2828;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f99589;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f15946;
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    justify-self: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+}
+span {
+  color: #f15946;
+}
+
 @media only screen and (min-width: 1024px) {
   .panel {
     width: 100vw;
@@ -12,8 +92,7 @@
   }
   .panel img {
     justify-self: center;
-    width: 90%;
-    position: relative;
+    width: 85%;
     border-radius: 45px;
     grid-area: img;
   }
@@ -28,23 +107,8 @@
     align-items: center;
     grid-area: text;
   }
-  .panel section h2 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    text-align: center;
-  }
-  .panel section span {
-    color: #f15946;
-  }
-  .panel section p {
-    text-align: center;
-    width: 90%;
-    justify-self: center;
-    font-size: 1.7rem;
-  }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   .panel {
     width: 100vw;
     height: 100vh;
@@ -52,11 +116,11 @@
     grid-template-areas: "img" "text" !important;
     align-items: center;
     text-align: center;
-    padding: 8rem 0;
+    padding: 3rem 0;
   }
   .panel img {
     justify-self: center;
-    width: 50%;
+    width: 60%;
     border-radius: 25px;
     grid-area: img;
   }
@@ -68,21 +132,6 @@
     justify-content: center;
     align-items: center;
     grid-area: text;
-  }
-  .panel section h2 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    text-align: center;
-  }
-  .panel section span {
-    color: #f15946;
-  }
-  .panel section p {
-    text-align: center;
-    width: 90%;
-    justify-self: center;
-    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -93,7 +142,7 @@
     grid-template-areas: "img" "text" !important;
     align-items: center;
     text-align: center;
-    padding: 8rem 0;
+    padding: 3rem 0;
   }
   .panel img {
     justify-self: center;
@@ -109,20 +158,5 @@
     justify-content: center;
     align-items: center;
     grid-area: text;
-  }
-  .panel section h2 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    text-align: center;
-  }
-  .panel section span {
-    color: #f15946;
-  }
-  .panel section p {
-    text-align: center;
-    width: 90%;
-    justify-self: center;
-    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=panelsStyles.css.map */

@@ -6,6 +6,7 @@ import { MenuPage } from "./MENU/MenuPage";
 
 import { useState, useEffect } from "react";
 import { Office } from "./OFFICE/Office";
+import { Oferta } from "./OFERTA/Oferta";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState(<Office />);
@@ -38,7 +39,4 @@ export default function App() {
       {currentPage}
     </>
   );
-}
-function Oferta() {
-  return <h1>TEST</h1>;
 }

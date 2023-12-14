@@ -1,17 +1,17 @@
 @import "../utilites/variables";
-
+span {
+  color: $primary;
+}
 @media only screen and (min-width: 1024px) {
   .panel {
     width: 100vw;
     min-height: 100vh;
     display: grid;
     align-items: center;
-
     text-align: center;
     img {
       justify-self: center;
-      width: 90%;
-      position: relative;
+      width: 85%;
       border-radius: 45px;
       grid-area: img;
     }
@@ -25,25 +25,10 @@
       justify-content: center;
       align-items: center;
       grid-area: text;
-      h2 {
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        font-weight: 900;
-        text-align: center;
-      }
-      span {
-        color: $primary;
-      }
-      p {
-        text-align: center;
-        width: 90%;
-        justify-self: center;
-        font-size: 1.7rem;
-      }
     }
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   .panel {
     width: 100vw;
     height: 100vh;
@@ -51,37 +36,21 @@
     grid-template-areas: "img" "text" !important;
     align-items: center;
     text-align: center;
-    padding: 8rem 0;
+    padding: 3rem 0;
     img {
       justify-self: center;
-      width: 50%;
+      width: 60%;
       border-radius: 25px;
       grid-area: img;
     }
     section {
       width: 90%;
       justify-self: center;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       grid-area: text;
-      h2 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-weight: 900;
-        text-align: center;
-      }
-      span {
-        color: $primary;
-      }
-      p {
-        text-align: center;
-        width: 90%;
-        justify-self: center;
-        font-size: 1.5rem;
-      }
     }
   }
 }
@@ -93,7 +62,7 @@
     grid-template-areas: "img" "text" !important;
     align-items: center;
     text-align: center;
-    padding: 8rem 0;
+    padding: 3rem 0;
     img {
       justify-self: center;
       width: 50%;
@@ -103,27 +72,11 @@
     section {
       width: 90%;
       justify-self: center;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       grid-area: text;
-      h2 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-weight: 900;
-        text-align: center;
-      }
-      span {
-        color: $primary;
-      }
-      p {
-        text-align: center;
-        width: 90%;
-        justify-self: center;
-        font-size: 1.5rem;
-      }
     }
   }
 }

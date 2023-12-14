@@ -1,0 +1,203 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../mainStyles/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: MontserratItalic;
+  src: url(../mainStyles/Montserrat-Italic-VariableFont_wght.ttf);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2b2828;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f99589;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f15946;
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    justify-self: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+}
+.ofertaDiv {
+  background-image: url("./background.png");
+  background-size: cover;
+  background-position: center;
+  min-height: auto;
+  padding: 5vh 0vw;
+}
+.ofertaDiv .pannelsRow {
+  display: flex;
+  flex-direction: row;
+  min-height: auto;
+  padding: 10vh 0vw;
+  justify-content: center;
+}
+.ofertaDiv .pannelsRow .panelFromRowDiv {
+  display: grid;
+  grid-template-areas: "headingDiv" "prosDiv" "buttonDiv";
+  grid-template-rows: 2fr 3fr 2fr;
+  align-items: center;
+  width: 50%;
+  margin: 5% 1%;
+  background-color: #2b2828;
+  color: #f4eded;
+  border-radius: 45px;
+}
+.ofertaDiv .pannelsRow .panelFromRowDiv .headingDiv {
+  grid-area: headingDiv;
+  align-self: flex-end;
+}
+.ofertaDiv .pannelsRow .panelFromRowDiv .prosDiv {
+  grid-area: prosDiv;
+  justify-self: center;
+  width: 80%;
+}
+.ofertaDiv .pannelsRow .panelFromRowDiv .buttonDiv {
+  grid-area: buttonDiv;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ofertaDiv .pannelsRow .selected {
+  border: 5px solid #2b2828;
+  background-color: #f15946 !important;
+  color: #2b2828 !important;
+}
+
+.introDiv {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.introDiv h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  font-size: 10vh;
+  text-transform: uppercase;
+  color: #2b2828;
+  width: 100%;
+  height: 30%;
+}
+
+.introDiv::after {
+  content: "";
+  left: 0;
+  top: 10vh;
+  background-image: url(./peopleWorking.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.infoPanel {
+  height: 80vh;
+  margin: 5vh 0vw;
+  border: solid #2b2828 5px;
+  width: 80vw;
+  display: grid;
+  position: relative;
+  left: 10vw;
+  border-radius: 50px;
+  grid-template-areas: "title title  title title" "image image content content";
+  grid-template-rows: 1fr 2fr;
+}
+.infoPanel .title {
+  background-color: #2b2828;
+  color: #f4eded;
+  border-radius: 40px 40px 0 0;
+  text-transform: uppercase;
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.infoPanel .image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: image;
+  border-radius: 0 0 0 45px;
+}
+.infoPanel .content {
+  background-color: lightgrey;
+  color: #2b2828;
+  border-radius: 0 0 45px;
+  padding: 0% 10%;
+  grid-area: content;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}/*# sourceMappingURL=ofertaStyles.css.map */

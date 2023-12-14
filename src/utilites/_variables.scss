@@ -7,3 +7,87 @@ $secondary: #f99589;
   font-family: Montserrat;
   src: url(../mainStyles/Montserrat-VariableFont_wght.ttf);
 }
+
+@font-face {
+  font-family: MontserratItalic;
+  src: url(../mainStyles/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primary-black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary;
+}
+
+.h1-lg {
+}
+.h1-md {
+}
+.h1-sm {
+}
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    justify-self: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+}
