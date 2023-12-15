@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/cafe-negrar/static/css/main.eb546997.css",
-    "main.js": "/cafe-negrar/static/js/main.a3840f36.js",
-    "static/media/coffee-beans-background.png": "/cafe-negrar/static/media/coffee-beans-background.d75f7b451a84280c2320.png",
+    "main.css": "/cafe-negrar/static/css/main.2cc636b2.css",
+    "main.js": "/cafe-negrar/static/js/main.2e2c1de5.js",
+    "static/media/background.png": "/cafe-negrar/static/media/background.74a5d224835f5a650c51.png",
+    "static/media/peopleWorking.png": "/cafe-negrar/static/media/peopleWorking.8437e5b2d9cc48ec7955.png",
     "static/media/office.jpg": "/cafe-negrar/static/media/office.4dc4b18ffac781473d39.jpg",
     "static/media/sandwichCheese.png": "/cafe-negrar/static/media/sandwichCheese.451962a26dda36cef5e4.png",
     "static/media/sandwichEgg.png": "/cafe-negrar/static/media/sandwichEgg.0abf319bf261a7b0c8bc.png",
     "static/media/sandwichAvokado.png": "/cafe-negrar/static/media/sandwichAvokado.08769387228acc78c6c1.png",
     "static/media/sandwichChicken.png": "/cafe-negrar/static/media/sandwichChicken.1150ab37d3043f055223.png",
     "static/media/sandwichSalmon.png": "/cafe-negrar/static/media/sandwichSalmon.a519d9e3c1ea5359beea.png",
+    "static/media/image.png": "/cafe-negrar/static/media/image.7498e9c749836de1d467.png",
     "static/media/sandwichVegan.png": "/cafe-negrar/static/media/sandwichVegan.7fc351e1c6d5a245382e.png",
+    "static/media/paperwork.png": "/cafe-negrar/static/media/paperwork.a116364e3b1e7839de2e.png",
     "static/media/coffePlusPie.png": "/cafe-negrar/static/media/coffePlusPie.089a68bae0eb9142d9bd.png",
     "static/media/sandwichHam.png": "/cafe-negrar/static/media/sandwichHam.78bad00e072af1c0fa4f.png",
     "static/media/PlaypenSans-VariableFont_wght.ttf": "/cafe-negrar/static/media/PlaypenSans-VariableFont_wght.c1d9d514e46930bfb36d.ttf",
+    "static/media/coffes.png": "/cafe-negrar/static/media/coffes.e81bc75e6fedb6aa7a69.png",
     "static/media/coffePlusSandwich.png": "/cafe-negrar/static/media/coffePlusSandwich.5db8825a684ab7c796e6.png",
     "static/media/applePie.png": "/cafe-negrar/static/media/applePie.ef221433956fe0aeec65.png",
     "static/media/chocolatePie.png": "/cafe-negrar/static/media/chocolatePie.fe20f1c214af5604d149.png",
+    "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/cafe-negrar/static/media/Montserrat-Italic-VariableFont_wght.7451547bd28d8dddbeea.ttf",
     "static/media/jellyPie.png": "/cafe-negrar/static/media/jellyPie.696f0f0722b20edcc668.png",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/cafe-negrar/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
     "static/media/waiterJPG.jpeg": "/cafe-negrar/static/media/waiterJPG.1c479455024d4844d275.jpeg",
     "static/media/cherryPie.png": "/cafe-negrar/static/media/cherryPie.661cfdce872332ea0e8f.png",
     "static/media/creamPie.png": "/cafe-negrar/static/media/creamPie.b2d437015c35d7dbe174.png",
@@ -24,6 +30,9 @@
     "static/media/christmasFlatWhite.png": "/cafe-negrar/static/media/christmasFlatWhite.50c6b84a5c2d95870caf.png",
     "static/media/cafeSanta.png": "/cafe-negrar/static/media/cafeSanta.f8ebcbb5e73aa6474ca0.png",
     "static/media/gingerbreadEspresso.png": "/cafe-negrar/static/media/gingerbreadEspresso.19e429fd793b21129182.png",
+    "static/media/office.png": "/cafe-negrar/static/media/office.f3ffdc2e64c2b8a2fd9f.png",
+    "static/media/boxOffer.webp": "/cafe-negrar/static/media/boxOffer.4e71661feb550f893eb3.webp",
+    "static/media/offer1.jpg": "/cafe-negrar/static/media/offer1.5c26f1c3caf404de6e0f.jpg",
     "static/media/liquoriceMacchiato.png": "/cafe-negrar/static/media/liquoriceMacchiato.f79d12fe019307c5a7a7.png",
     "static/media/cafeCreme.png": "/cafe-negrar/static/media/cafeCreme.17ad960104fc5d55de23.png",
     "static/media/espressoDoppio.png": "/cafe-negrar/static/media/espressoDoppio.5687aa669eb5485e861b.png",
@@ -31,6 +40,7 @@
     "static/media/gingerHoneySurprise.png": "/cafe-negrar/static/media/gingerHoneySurprise.9c4720cc7fdbaf49d620.png",
     "static/media/biscuitLatte.png": "/cafe-negrar/static/media/biscuitLatte.14cd988a8d9ae1af3b18.png",
     "static/media/cappucino.png": "/cafe-negrar/static/media/cappucino.4e6e5a178540f52e2d57.png",
+    "static/media/man-with-coffe.jpeg": "/cafe-negrar/static/media/man-with-coffe.29bf85a8b62a435ab480.jpeg",
     "static/media/flatWhite.png": "/cafe-negrar/static/media/flatWhite.d823c274b4f3cae3f4f7.png",
     "static/media/working-men.jpg": "/cafe-negrar/static/media/working-men.265bcb1f409077529e82.jpg",
     "static/media/cortado.png": "/cafe-negrar/static/media/cortado.a51c0ec9a5eaec41c7ba.png",
@@ -41,11 +51,11 @@
     "static/media/espresso.png": "/cafe-negrar/static/media/espresso.9c78ae52848ccb09758e.png",
     "static/media/latteMacchiato.png": "/cafe-negrar/static/media/latteMacchiato.85cfd7dfb8ed1119be99.png",
     "index.html": "/cafe-negrar/index.html",
-    "main.eb546997.css.map": "/cafe-negrar/static/css/main.eb546997.css.map",
-    "main.a3840f36.js.map": "/cafe-negrar/static/js/main.a3840f36.js.map"
+    "main.2cc636b2.css.map": "/cafe-negrar/static/css/main.2cc636b2.css.map",
+    "main.2e2c1de5.js.map": "/cafe-negrar/static/js/main.2e2c1de5.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb546997.css",
-    "static/js/main.a3840f36.js"
+    "static/css/main.2cc636b2.css",
+    "static/js/main.2e2c1de5.js"
   ]
 }
