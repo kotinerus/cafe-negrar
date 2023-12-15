@@ -1,10 +1,10 @@
 @font-face {
   font-family: Montserrat;
-  src: url(../mainStyles/Montserrat-VariableFont_wght.ttf);
+  src: url(../utilites/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: MontserratItalic;
-  src: url(../mainStyles/Montserrat-Italic-VariableFont_wght.ttf);
+  src: url(../utilites/Montserrat-Italic-VariableFont_wght.ttf);
 }
 /* width */
 ::-webkit-scrollbar {
@@ -80,7 +80,7 @@
 }
 @media screen and (min-width: 1024px) {
   .ofertaDiv {
-    background-image: url("./background.png");
+    background-image: url("./background.webp");
     background-size: cover;
     background-position: center;
     min-height: auto;
@@ -148,7 +148,7 @@
     content: "";
     left: 0;
     top: 10vh;
-    background-image: url(./peopleWorking.png);
+    background-image: url(./peopleWorking.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -209,7 +209,7 @@
   .ofertaDiv {
     top: 0;
     position: relative;
-    background-image: url("./background.png");
+    background-image: url("./background.webp");
     background-size: cover;
     background-position: center;
     min-height: auto;

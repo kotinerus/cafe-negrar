@@ -1,6 +1,6 @@
-import coffeMen from "./imgsOfPanels/man-with-coffe.jpeg";
-import workingMen from "./imgsOfPanels/working-men.jpg";
-import office from "./imgsOfPanels/office.jpg";
+import coffeMen from "./imgsOfPanels/manWithCoffe.webp";
+import workingMen from "./imgsOfPanels/workingMen.webp";
+import office from "./imgsOfPanels/office.webp";
 
 export const listOfPanels = [
   {

@@ -1,19 +1,11 @@
-$primary-black: #2b2828;
-$primary-white: #f4eded;
-$primary-gray: #818181;
-$primary: #f15946;
-$secondary: #f99589;
-
 @font-face {
   font-family: Montserrat;
   src: url(../utilites/Montserrat-VariableFont_wght.ttf);
 }
-
 @font-face {
   font-family: MontserratItalic;
   src: url(../utilites/Montserrat-Italic-VariableFont_wght.ttf);
 }
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -21,25 +13,19 @@ $secondary: #f99589;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: $primary-black;
+  background: #2b2828;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $secondary;
+  background: #f99589;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $primary;
+  background: #f15946;
 }
 
-.h1-lg {
-}
-.h1-md {
-}
-.h1-sm {
-}
 @media only screen and (min-width: 1024px) {
   h2 {
     font-size: 2.5rem;
@@ -92,3 +78,43 @@ $secondary: #f99589;
     font-weight: 700;
   }
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.loading {
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2828;
+  opacity: 0.75;
+}
+.loading img {
+  border-radius: 45%;
+  width: 10%;
+  animation: rotateStill;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotateStill {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 90deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  75% {
+    rotate: 270deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}/*# sourceMappingURL=AppStyles.css.map */

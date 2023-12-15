@@ -1,0 +1,40 @@
+@import "./_variables.scss";
+html,
+body {
+  scroll-behavior: smooth;
+}
+.loading {
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-black;
+  opacity: 0.75;
+  img {
+    border-radius: 45%;
+    width: 10%;
+    animation: rotateStill;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes rotateStill {
+    0% {
+      rotate: 0deg;
+    }
+    25% {
+      rotate: 90deg;
+    }
+    50% {
+      rotate: 180deg;
+    }
+    75% {
+      rotate: 270deg;
+    }
+    100% {
+      rotate: 360deg;
+    }
+  }
+}

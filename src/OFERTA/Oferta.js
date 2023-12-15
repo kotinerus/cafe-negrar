@@ -1,5 +1,5 @@
 import "./ofertaStyles.css";
-import peopleWorking from "./peopleWorking.png";
+import peopleWorking from "./peopleWorking.webp";
 import { Button } from "../ButtonComponent/Button";
 import { pakiety } from "./ofertaPositions/listOfOferta";
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "../ButtonComponent/Button.js";
 import { Navbar } from "../NAVBAR/Navbar";
 
-import { listOfPositions } from "../menuPositions/listOfPositions.js";
+import { listOfPositions } from "./menuPositions/listOfPositions.js";
 import "./menuStyles.css";
 
 const panels = [
@@ -121,3 +121,11 @@ function Cart() {
     </div>
   );
 }
+// function Loading() {
+//   return (
+//     <div className="loading">
+//       <img src={require("./negrar-logo.png")} />
+//     </div>
+//   );
+// }
+// {loading ? <Loading /> :

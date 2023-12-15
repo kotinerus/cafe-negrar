@@ -1,10 +1,10 @@
 @font-face {
   font-family: Montserrat;
-  src: url(../mainStyles/Montserrat-VariableFont_wght.ttf);
+  src: url(../utilites/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: MontserratItalic;
-  src: url(../mainStyles/Montserrat-Italic-VariableFont_wght.ttf);
+  src: url(../utilites/Montserrat-Italic-VariableFont_wght.ttf);
 }
 /* width */
 ::-webkit-scrollbar {

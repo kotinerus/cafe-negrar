@@ -1,4 +1,4 @@
-import "./mainStyles/AppStyles.css";
+import "./utilites/AppStyles.css";
 import { Navbar } from "./NAVBAR/Navbar";
 
 import { LandingPage } from "./LANDING_PAGE/LandingPage";
@@ -9,7 +9,7 @@ import { Office } from "./OFFICE/Office";
 import { Oferta } from "./OFERTA/Oferta";
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState(<Office />);
+  const [currentPage, setCurrentPage] = useState(<LandingPage />);
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" }, [currentPage]);
   });

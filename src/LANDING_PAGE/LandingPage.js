@@ -1,6 +1,6 @@
 import "./landingPageStyles.css";
 
-import waiter from "../imgs/waiterJPG.jpeg";
+import waiter from "../imgs/waiter.webp";
 
 import { Panel } from "../PANELS/Panels";
 import { listOfPanels } from "./listOfPanels/listOfPanels.js";
