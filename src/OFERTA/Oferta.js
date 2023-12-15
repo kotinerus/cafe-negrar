@@ -80,6 +80,22 @@ function InfoPanel({ item }) {
             </li>
           ))}
         </ul>
+        <div className="buttons">
+          <Button
+            margin={"5px"}
+            backgroundColor={item.selected ? "#2b2828" : "#F15946"}
+            className="buttons"
+          >
+            Zamów
+          </Button>
+          <Button
+            margin={"5px"}
+            className="buttons"
+            backgroundColor={item.selected ? "#2b2828" : "#F15946"}
+          >
+            Dowiedz się więcej
+          </Button>
+        </div>
       </div>
     </div>
   );

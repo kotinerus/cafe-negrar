@@ -84,6 +84,9 @@ body {
         width: 20%;
         color: #2b282b;
       }
+      h3 {
+        font-size: 1.5rem;
+      }
       border-radius: 2px solid black;
     }
   }
@@ -208,7 +211,7 @@ body {
 
   .perksDiv {
     padding: 5vh 0vh;
-    height: 90vh;
+    min-height: 90vh;
     left: 10vw;
     right: 10vw;
     top: 10vh;
@@ -238,6 +241,9 @@ body {
         width: 20%;
         color: #2b282b;
       }
+      h3 {
+        font-size: 1.3rem;
+      }
       border-radius: 2px solid black;
     }
   }
@@ -249,7 +255,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 90vw;
     position: absolute;
     top: 100vh;
     right: 0;
@@ -352,7 +358,7 @@ body {
 
   .perksDiv {
     padding: 5vh 0vh;
-    height: 90vh;
+    min-height: 90vh;
     left: 10vw;
     right: 10vw;
     top: 10vh;
@@ -392,8 +398,8 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 150vh;
+    width: 90vw;
     position: absolute;
     top: 100vh;
     right: 0;
@@ -417,12 +423,13 @@ body {
       background-color: white;
       justify-content: center;
       align-items: center;
+      min-height: 50%;
       h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         color: $primary;
       }
       h2 {
-        font-size: 1rem;
+        font-size: 0.6rem;
       }
     }
     .start {
