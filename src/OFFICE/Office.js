@@ -130,7 +130,7 @@ export function Office() {
           zapewniamy kompleksową infrastrukturę, abyś mógł skupić się na
           osiąganiu swoich celów biznesowych.
         </p>
-        <Button width="25%" color="black" fontWeight="900">
+        <Button width="50%" color="black" fontWeight="900">
           Zarezerwuj
         </Button>
       </div>

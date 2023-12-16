@@ -284,6 +284,108 @@
     animation-duration: 1s;
   }
 }
+@media only screen and (max-width: 767px) {
+  .menuPositionsPanels {
+    display: grid;
+    grid-template-columns: 1fr;
+    top: 8vh;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    background-color: #f4eded;
+  }
+  .menuPositionsPanels .item {
+    background-color: #2b2828;
+    color: #f4eded;
+    margin: 1rem 1rem;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  .menuPositionsPanels .item .base {
+    position: relative;
+    width: 90%;
+    left: 5%;
+  }
+  .menuPositionsPanels .item .wrapper-img {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuPositionsPanels .item .wrapper-img img {
+    min-height: 200px;
+    max-width: 100%;
+  }
+  .menuPositionsPanels .item .wrapper-name {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuPositionsPanels .item .wrapper-price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .menuPositionsPanels .item .wrapper-price .product {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    border-radius: 45px;
+    background-color: #f15946;
+    color: #2b2828;
+    cursor: pointer;
+  }
+  .menuPositionsPanels .item .wrapper-price .product:hover {
+    background-color: #f99589;
+    color: #2b2828;
+    transition: 0.5s;
+  }
+  .menuPositionsPanels .item .wrapper-price .product:focus {
+    background-color: #f99589;
+    color: #2b2828;
+  }
+  .menuPositionsPanels .item .wrapper-button .buttonObject {
+    background-color: #f15946;
+    border: none;
+    border-radius: 45px;
+    font-family: Lato;
+    width: 60%;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .menuPositionsPanels .item .wrapper-button .buttonObject:hover {
+    background-color: #f99589;
+    color: #2b2828;
+    transition: 0.5s;
+  }
+  .shoppingCart {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 30%;
+    background-color: #f15946;
+    border-radius: 25px;
+    top: 89%;
+    left: 69%;
+  }
+  .shoppingCart svg {
+    height: 60%;
+    width: 60%;
+  }
+  .shoppingCart svg:hover {
+    animation-name: shake;
+    animation-duration: 1s;
+  }
+}
 @keyframes shake {
   40% {
     rotate: -15deg;

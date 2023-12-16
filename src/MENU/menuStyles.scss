@@ -222,6 +222,113 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  .menuPositionsPanels {
+    display: grid;
+    grid-template-columns: 1fr;
+    top: 8vh;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    background-color: $primary-white;
+    .item {
+      background-color: $primary-black;
+      color: $primary-white;
+      margin: 1rem 1rem;
+      min-height: 550px;
+      display: flex;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+
+      .base {
+        position: relative;
+        width: 90%;
+        left: 5%;
+      }
+      .wrapper-img {
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          min-height: 200px;
+          max-width: 100%;
+        }
+      }
+
+      .wrapper-name {
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .wrapper-price {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        .product {
+          display: flex;
+          justify-content: space-evenly;
+          width: 30%;
+          border-radius: 45px;
+          background-color: $primary;
+          color: $primary-black;
+          cursor: pointer;
+        }
+        .product:hover {
+          background-color: $secondary;
+          color: $primary-black;
+
+          transition: 0.5s;
+        }
+        .product:focus {
+          background-color: $secondary;
+          color: $primary-black;
+        }
+      }
+      .wrapper-button {
+        .buttonObject {
+          background-color: $primary;
+          border: none;
+          border-radius: 45px;
+          font-family: Lato;
+          width: 60%;
+          font-weight: 500;
+          cursor: pointer;
+        }
+        .buttonObject:hover {
+          background-color: $secondary;
+          color: $primary-black;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+  .shoppingCart {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 30%;
+    background-color: $primary;
+    border-radius: 25px;
+    top: 89%;
+    left: 69%;
+    svg {
+      height: 60%;
+      width: 60%;
+    }
+    svg:hover {
+      animation-name: shake;
+      animation-duration: 1s;
+    }
+  }
 }
 @keyframes shake {
   40% {

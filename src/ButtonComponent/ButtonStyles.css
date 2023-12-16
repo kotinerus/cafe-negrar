@@ -1,1 +1,83 @@
-/*# sourceMappingURL=ButtonStyles.css.map */
+@font-face {
+  font-family: Montserrat;
+  src: url(../utilites/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: MontserratItalic;
+  src: url(../utilites/Montserrat-Italic-VariableFont_wght.ttf);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2b2828;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f99589;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f15946;
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    justify-self: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+}
+.btn-info {
+  font-family: Montserrat;
+}/*# sourceMappingURL=ButtonStyles.css.map */

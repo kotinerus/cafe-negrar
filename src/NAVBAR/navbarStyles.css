@@ -162,6 +162,9 @@
     justify-content: space-around;
     align-items: center;
   }
+  .navbarDiv a {
+    font-size: 3vw;
+  }
   .navbarDiv .showStill select {
     display: none;
   }
