@@ -439,7 +439,7 @@ body {
   }
   .perksDiv::before {
     content: "";
-    padding: 0vh 10vw;
+    padding: 0vh 5vw;
     background-image: url("./image.png");
     background-position: center;
     background-size: cover;
