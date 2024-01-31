@@ -3,7 +3,7 @@ export function Navbar({
   children,
   colorPallete,
   colorHover,
-  gridTemplate = "3fr 1fr 1fr 1fr ",
+  gridTemplate = "3fr 1fr 1fr 1fr 1fr ",
   showFirst = false,
 }) {
   return (

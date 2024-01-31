@@ -47,6 +47,7 @@ export const listOfPositions = [
     ],
     img: espresso,
     type: "coffe",
+    avaliable: true,
   },
   {
     id: 2,
@@ -58,6 +59,7 @@ export const listOfPositions = [
     ],
     img: cappucino,
     type: "coffe",
+    avaliable: true,
   },
   {
     id: 3,
@@ -69,6 +71,7 @@ export const listOfPositions = [
     ],
     img: americano,
     type: "coffe",
+    avaliable: true,
   },
   {
     id: 4,
@@ -80,6 +83,7 @@ export const listOfPositions = [
     ],
     img: cafeCreme,
     type: "coffe",
+    avaliable: true,
   },
   {
     id: 5,
@@ -91,6 +95,7 @@ export const listOfPositions = [
     ],
     img: cortado,
     type: "coffe",
+    avaliable: true,
   },
   {
     id: 6,
@@ -102,6 +107,7 @@ export const listOfPositions = [
     ],
     img: espressoDoppio,
     type: "coffe",
+    avaliable: true,
   },
   {
     id: 7,
@@ -113,6 +119,7 @@ export const listOfPositions = [
     ],
     img: flatWhite,
     type: "coffe",
+    avaliable: true,
   },
   {
     id: 8,
@@ -124,6 +131,7 @@ export const listOfPositions = [
     ],
     img: latteMacchiato,
     type: "coffe",
+    avaliable: true,
   },
   {
     id: 9,
@@ -135,6 +143,7 @@ export const listOfPositions = [
     ],
     img: lungo,
     type: "coffe",
+    avaliable: true,
   },
   {
     id: 10,
@@ -146,6 +155,7 @@ export const listOfPositions = [
     ],
     img: macchiato,
     type: "coffe",
+    avaliable: true,
   },
   {
     id: 11,
@@ -157,6 +167,7 @@ export const listOfPositions = [
     ],
     img: ristretto,
     type: "coffe",
+    avaliable: true,
   },
   ///
   {
@@ -168,6 +179,7 @@ export const listOfPositions = [
     ],
     img: sandwichHam,
     type: "breakfast",
+    avaliable: true,
   },
   {
     id: 13,
@@ -178,6 +190,7 @@ export const listOfPositions = [
     ],
     img: sandwichSalmon,
     type: "breakfast",
+    avaliable: true,
   },
   {
     id: 14,
@@ -188,6 +201,7 @@ export const listOfPositions = [
     ],
     img: sandwichChicken,
     type: "breakfast",
+    avaliable: true,
   },
   {
     id: 15,
@@ -198,6 +212,7 @@ export const listOfPositions = [
     ],
     img: sandwichAvokado,
     type: "breakfast",
+    avaliable: true,
   },
   {
     id: 16,
@@ -208,6 +223,7 @@ export const listOfPositions = [
     ],
     img: sandwichCheese,
     type: "breakfast",
+    avaliable: true,
   },
   {
     id: 17,
@@ -218,6 +234,7 @@ export const listOfPositions = [
     ],
     img: sandwichVegan,
     type: "breakfast",
+    avaliable: true,
   },
   {
     id: 18,
@@ -228,6 +245,7 @@ export const listOfPositions = [
     ],
     img: sandwichEgg,
     type: "breakfast",
+    avaliable: true,
   },
   {
     id: 19,
@@ -239,6 +257,7 @@ export const listOfPositions = [
     ],
     img: cappuzino,
     type: "sesonal",
+    avaliable: true,
   },
   {
     id: 20,
@@ -250,6 +269,7 @@ export const listOfPositions = [
     ],
     img: christmasFlatWhite,
     type: "sesonal",
+    avaliable: true,
   },
   {
     id: 21,
@@ -261,6 +281,7 @@ export const listOfPositions = [
     ],
     img: colourfulCoffeeDream,
     type: "sesonal",
+    avaliable: true,
   },
   {
     id: 22,
@@ -272,6 +293,7 @@ export const listOfPositions = [
     ],
     img: gingerbreadEspresso,
     type: "sesonal",
+    avaliable: true,
   },
   {
     id: 23,
@@ -283,6 +305,7 @@ export const listOfPositions = [
     ],
     img: gingerHoneySurprise,
     type: "sesonal",
+    avaliable: true,
   },
   {
     id: 24,
@@ -294,6 +317,7 @@ export const listOfPositions = [
     ],
     img: liquoriceMacchiato,
     type: "sesonal",
+    avaliable: true,
   },
   {
     id: 25,
@@ -305,6 +329,7 @@ export const listOfPositions = [
     ],
     img: biscuitLatte,
     type: "sesonal",
+    avaliable: true,
   },
   {
     id: 26,
@@ -316,6 +341,7 @@ export const listOfPositions = [
     ],
     img: cafeSanta,
     type: "sesonal",
+    avaliable: true,
   },
   {
     id: 27,
@@ -326,6 +352,7 @@ export const listOfPositions = [
     ],
     img: applePie,
     type: "sweet",
+    avaliable: true,
   },
   {
     id: 28,
@@ -336,6 +363,7 @@ export const listOfPositions = [
     ],
     img: cherryPie,
     type: "sweet",
+    avaliable: true,
   },
   {
     id: 29,
@@ -346,6 +374,7 @@ export const listOfPositions = [
     ],
     img: chocolatePie,
     type: "sweet",
+    avaliable: true,
   },
   {
     id: 30,
@@ -356,6 +385,7 @@ export const listOfPositions = [
     ],
     img: jellyPie,
     type: "sweet",
+    avaliable: true,
   },
   {
     id: 31,
@@ -366,6 +396,7 @@ export const listOfPositions = [
     ],
     img: creamPie,
     type: "sweet",
+    avaliable: true,
   },
   {
     id: 32,
@@ -377,6 +408,7 @@ export const listOfPositions = [
     ],
     img: coffePie,
     type: "set",
+    avaliable: true,
   },
   {
     id: 33,
@@ -388,5 +420,6 @@ export const listOfPositions = [
     ],
     img: coffeSandwich,
     type: "set",
+    avaliable: true,
   },
 ];
