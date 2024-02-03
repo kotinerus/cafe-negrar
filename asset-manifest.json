@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cafe-negrar/static/css/main.e1760fc3.css",
-    "main.js": "/cafe-negrar/static/js/main.6a692739.js",
+    "main.css": "/cafe-negrar/static/css/main.c85b7192.css",
+    "main.js": "/cafe-negrar/static/js/main.9c34e79a.js",
     "static/media/peopleWorking.png": "/cafe-negrar/static/media/peopleWorking.8437e5b2d9cc48ec7955.png",
     "static/media/image.png": "/cafe-negrar/static/media/image.7498e9c749836de1d467.png",
     "static/media/paperwork.png": "/cafe-negrar/static/media/paperwork.a116364e3b1e7839de2e.png",
@@ -53,11 +53,11 @@
     "static/media/ristretto.webp": "/cafe-negrar/static/media/ristretto.8491e8834c46aceb1ee8.webp",
     "static/media/latteMacchiato.webp": "/cafe-negrar/static/media/latteMacchiato.0056a2426f330a313d48.webp",
     "index.html": "/cafe-negrar/index.html",
-    "main.e1760fc3.css.map": "/cafe-negrar/static/css/main.e1760fc3.css.map",
-    "main.6a692739.js.map": "/cafe-negrar/static/js/main.6a692739.js.map"
+    "main.c85b7192.css.map": "/cafe-negrar/static/css/main.c85b7192.css.map",
+    "main.9c34e79a.js.map": "/cafe-negrar/static/js/main.9c34e79a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1760fc3.css",
-    "static/js/main.6a692739.js"
+    "static/css/main.c85b7192.css",
+    "static/js/main.9c34e79a.js"
   ]
 }
