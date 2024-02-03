@@ -88,6 +88,34 @@ body {
   flex-direction: column;
 }
 
+.iconsDiv {
+  position: fixed;
+  background-color: #2b2828;
+  color: #f4eded;
+  display: flex;
+  flex-direction: column;
+  top: 40vh;
+  bottom: 40vh;
+  height: 20vh;
+  width: 3vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.iconsDiv a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.iconsDiv a svg {
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+  color: #f4eded;
+}
+
 @media only screen and (min-width: 1024px) {
   .welcomeDiv {
     min-height: 100vh;

@@ -10,7 +10,7 @@ import { Oferta } from "./OFERTA/Oferta";
 import { Admin } from "./ADMIN/Admin";
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState(<Admin />);
+  const [currentPage, setCurrentPage] = useState(<LandingPage />);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" }, [currentPage]);

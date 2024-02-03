@@ -9,7 +9,34 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.iconsDiv {
+  position: fixed;
+  background-color: $primary-black;
+  color: $primary-white;
+  display: flex;
+  flex-direction: column;
+  top: 40vh;
+  bottom: 40vh;
+  height: 20vh;
+  width: 3vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    svg {
+      // background-color: red;
+      width: 50%;
+      height: 50%;
+      cursor: pointer;
+      color: $primary-white;
+    }
+  }
+}
 @media only screen and (min-width: 1024px) {
   .welcomeDiv {
     min-height: 100vh;
